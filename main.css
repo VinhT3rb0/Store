@@ -22,6 +22,7 @@ body{
     /* width: calc(100%/3); */
     color: white;
     text-transform: uppercase;
+    font-size: 15px;
 }
 
 #header {
@@ -61,3 +62,23 @@ body{
 #navbarNav > ul > li > a{
     color: white;
 }
+#wrapper #header .login  span i   {
+font-size: 20px;
+margin-left: 10px;
+}
+.body .introduce img{
+    width: 584px;
+    height:  418px;
+}
+.body .introduce{
+    justify-content: space-between;
+    padding: 60px;
+}
+.body .introduce .part-right{
+    width: 600px;
+}
+.body .introduce .part-right h2{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
