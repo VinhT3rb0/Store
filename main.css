@@ -68,22 +68,24 @@ body {
     margin-left: 10px;
 }
 
+
+
 .introduce{
     width: 100%;
 }
 
 
-.body .introduce img {
+.body1 .introduce img {
     width: 100%;
 }
 
-.body .introduce {
+.body1 .introduce {
     padding: 60px;
 }
 
 
 
-.body .introduce .part-right h2 {
+.body1 .introduce .part-right h2 {
     font-weight: 600;
     padding-bottom: 10px;
 }
