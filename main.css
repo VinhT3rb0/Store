@@ -69,6 +69,10 @@ body {
 }
 
 
+#wrapper{
+    height: 2000px;
+}
+
 
 .introduce{
     width: 100%;
@@ -83,7 +87,39 @@ body {
     padding: 60px;
 }
 
+.bgr{
+    background-image: url('http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/slide-bg-1.jpg');
+    background-position: center;
+    height: 600px;
+}
 
+.bgr2{
+    background-image: url('http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/slide-bg-2.jpg');
+    background-position: center;
+    height: 600px;
+}
+
+.bgr3{
+    background-image: url('./assets/luke-chesser-vCF5sB7QecM-unsplash.jpg');
+    background-size: cover;
+    height: 600px;
+}
+
+.setupHeight{
+    height: 600px;
+}
+.carousel_content{
+    display: block;
+    width: 50%;
+    text-align: justify;
+    padding: 180px 0px 0px 200px;
+    color: white;
+    z-index: 99;
+}
+
+.setHover:hover{
+    background-color: #c89979;
+}
 
 .body1 .introduce .part-right h2 {
     font-weight: 600;
