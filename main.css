@@ -126,3 +126,72 @@ body {
     font-weight: 600;
     padding-bottom: 10px;
 }
+
+.banner_home{
+    margin: 40px 40px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.bg_banner1{
+    position: relative;
+    width: 47%;
+    height: 350px;
+    background-image: url(./assets/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: 88% 37%;
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+
+}
+
+.bg_banner1:hover{
+    width: 47%;
+    transform: scale(1.1);
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+
+.bg_banner2{
+    width: 47%;
+    height: 350px;
+    background-image: url(./assets/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: 53% 43%;
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+
+.bg_banner2:hover{
+    width: 47%;
+    transform: scale(1.1);
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+
+.bg_banner1 a,.bg_banner2 a{
+    z-index: 99;
+    text-decoration: none;
+    color: white;
+}
+
+.bg_banner1 .banner_content1,  .bg_banner2 .banner_content2{
+    position: absolute;
+    padding: 130px 50px;
+}
+
+.banner_content1 span:first-child p, .banner_content2 span:first-child p {
+    font-size: 30px;
+}
+
+.banner_content1 span:last-child p, .banner_content2 span:last-child p{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.space{
+    margin-bottom: 12px;
+    display: block;
+    height: 3px;
+    width: 13%;
+    background-color: white;
+}
