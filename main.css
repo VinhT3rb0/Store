@@ -18,6 +18,12 @@ body {
     width: 470px;
 }
 
+#wrapper{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    
+}
+
 .login {
     /* width: calc(100%/3); */
     color: white;
@@ -34,6 +40,12 @@ body {
     width: 100%;
     height: 100px;
     background-color: #353535;
+}
+
+.header_two{
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 #color {
@@ -70,7 +82,7 @@ body {
 
 
 #wrapper{
-    height: 2000px;
+    height: 4000px;
 }
 
 
@@ -128,7 +140,7 @@ body {
 }
 
 .banner_home{
-    margin: 40px 40px;
+    margin: 40px 120px;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
@@ -138,7 +150,8 @@ body {
 
 .bg_banner1{
     position: relative;
-    width: 47%;
+    border-radius: 10px;
+    width: 500px;
     height: 350px;
     background-image: url(./assets/banner1.jpg);
     background-repeat: no-repeat;
@@ -148,28 +161,32 @@ body {
 }
 
 .bg_banner1:hover{
-    width: 47%;
+    width: 500px;
+    max-width: 500px;
     transform: scale(1.1);
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
 }
 
 .bg_banner2{
-    width: 47%;
+    border-radius: 10px;
+
+    width: 500px;
     height: 350px;
     background-image: url(./assets/banner2.jpg);
     background-repeat: no-repeat;
-    background-position: 53% 43%;
+    background-position: 58% 43%;
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
 }
 
 .bg_banner2:hover{
-    width: 47%;
+    width: 500px;
+    max-width: 500px;
     transform: scale(1.1);
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
 }
 
 .bg_banner1 a,.bg_banner2 a{
-    z-index: 99;
+    z-index: 30;
     text-decoration: none;
     color: white;
 }
