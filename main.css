@@ -198,3 +198,15 @@ body {
 .part-right p{
     text-align: justify;
 }
+
+.card img{
+    height: 280px;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: black;
+}
+
+.card {
+    margin: 0 10px;
+}

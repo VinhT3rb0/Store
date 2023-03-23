@@ -1,86 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" rel="preconnect"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="/store/main.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="wrapper">
         <div id="header">
             <div class="logo">
-                <img src="/store/assets/images/336051776_195820769748830_9036133639364375530_n.png" alt="" style="width: 200px;height: 60px;">
+                <img src="/store/assets/images/336051776_195820769748830_9036133639364375530_n.png" alt=""
+                    style="width: 200px;height: 60px;">
             </div>
 
             <div class="input">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn  btn-outline-secondary" style="color: white; width: 80px; background-color: rgb(197, 183, 79);" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button class="btn  btn-outline-secondary"
+                        style="color: white; width: 80px; background-color: rgb(197, 183, 79);" type="button"
+                        id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
-            
+
             <div class="login">
                 <button type="button" class="btn btn-dark">Đăng nhập</button>
-                 <span>
-                    <i class="fa-solid fa-cart-plus" ></i>
+                <span>
+                    <i class="fa-solid fa-cart-plus"></i>
                 </span>
             </div>
-           
+
         </div>
 
         <div class="header_two">
             <nav class="navbar navbar-expand-lg navbar-light " id="color">
                 <div class="container-fluid">
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Trang chủ</a>
-                        </li>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Trang chủ</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Giới thiệu</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Thương hiệu</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Giới thiệu</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sản phẩm</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Thương hiệu</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blogs</a>
-                        </li>
-                      
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Liên hệ</a>
-                        </li>
-                    </ul>
-                  </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sản phẩm</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blogs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
+            </nav>
         </div>
 
         <div class="body1">
             <div class="home">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
+                    
                     <div class="carousel-inner setupHeight">
                         <div class="carousel-item active bgr" data-bs-interval="2000">
                             <div class="carousel_content">
                                 <p class="fs-2">Mona Watch</p>
                                 <h1>Đồng hồ Classico</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eaque unde? Delectus rerum suscipit asperiores, ducimus, veniam similique earum sequi minus voluptatibus itaque incidunt adipisci quibusdam...</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eaque unde?
+                                    Delectus rerum suscipit asperiores, ducimus, veniam similique earum sequi minus
+                                    voluptatibus itaque incidunt adipisci quibusdam...</p>
                                 <!-- <a href="">Xem sản phẩm</a> -->
                                 <button type="button" class="btn border border-3 rounded btn-lg px-4 py-2 setHover">
                                     <a href="#" class="text-decoration-none text-white text-uppercase">Xem sản phẩm</a>
@@ -92,7 +113,9 @@
                             <div class="carousel_content">
                                 <p class="fs-2">Mona Watch</p>
                                 <h1>Đồng hồ Classico</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eaque unde? Delectus rerum suscipit asperiores, ducimus, veniam similique earum sequi minus voluptatibus itaque incidunt adipisci quibusdam...</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eaque unde?
+                                    Delectus rerum suscipit asperiores, ducimus, veniam similique earum sequi minus
+                                    voluptatibus itaque incidunt adipisci quibusdam...</p>
                                 <!-- <a href="">Xem sản phẩm</a> -->
                                 <button type="button" class="btn border border-3 rounded btn-lg px-4 py-2 setHover">
                                     <a href="#" class="text-decoration-none text-white text-uppercase">Xem sản phẩm</a>
@@ -104,7 +127,9 @@
                             <div class="carousel_content text-black">
                                 <p class="fs-2">Mona Watch</p>
                                 <h1>Đồng hồ Classico</h1>
-                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eaque unde? Delectus rerum suscipit asperiores, ducimus, veniam similique earum sequi minus voluptatibus itaque incidunt adipisci quibusdam...</p>
+                                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eaque
+                                    unde? Delectus rerum suscipit asperiores, ducimus, veniam similique earum sequi
+                                    minus voluptatibus itaque incidunt adipisci quibusdam...</p>
                                 <!-- <a href="">Xem sản phẩm</a> -->
                                 <button type="button" class="btn border border-3 rounded btn-lg px-4 py-2 setHover">
                                     <a href="#" class="text-decoration-none text-black text-uppercase">Xem sản phẩm</a>
@@ -112,54 +137,143 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-    
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                        </button>
-                  </div>
+                    </button>
+                </div>
 
-                  <div class="banner_home">
-                        <div class="bg_banner1">
-                            <a href="#" class="fill">
-                                <div class="banner_content1">
-                                    <span>
-                                        <p>Xu hướng 2023</p>
-                                    </span>
-                                    <div class="space"></div>
-                                    <span>
-                                        <p>Đồng hồ nam</p>
-                                    </span>
-                                </div>
-                            </a>
-                        </div>
+                <div class="banner_home">
+                    <div class="bg_banner1">
+                        <a href="#" class="fill">
+                            <div class="banner_content1">
+                                <span>
+                                    <p>Xu hướng 2023</p>
+                                </span>
+                                <div class="space"></div>
+                                <span>
+                                    <p>Đồng hồ nam</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
 
-                        <div class="bg_banner2">
-                            <a href="#" class="fill">
-                                <div class="banner_content2">
-                                    <span>
-                                        <p>Xu hướng 2023</p>
-                                    </span>
-                                    <div class="space"></div>
-                                    <span>
-                                        <p>Đồng hồ nữ</p>
-                                    </span>
+                    <div class="bg_banner2">
+                        <a href="#" class="fill">
+                            <div class="banner_content2">
+                                <span>
+                                    <p>Xu hướng 2023</p>
+                                </span>
+                                <div class="space"></div>
+                                <span>
+                                    <p>Đồng hồ nữ</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="container mt-3">
+                        <div class="row autoplay">
+
+                            <div class="col-lg-4 mg">
+                                <div class="card">
+                                    <img class="card-img-top"
+                                        src="https://cf.shopee.vn/file/dee1682bb885c7465b94e1f064221127"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rate: 2.000.000 VNĐ</h4>
+                                        <p class="card-text">Title details</p>
+                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
+
+                            <div class="col-lg-4 mg">
+                                <div class="card">
+                                    <img class="card-img-top"
+                                        src="https://cf.shopee.vn/file/dee1682bb885c7465b94e1f064221127"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rate: 2.000.000 VNĐ</h4>
+                                        <p class="card-text">Title details</p>
+                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mg">
+                                <div class="card">
+                                    <img class="card-img-top"
+                                        src="https://cf.shopee.vn/file/dee1682bb885c7465b94e1f064221127"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rate: 2.000.000 VNĐ</h4>
+                                        <p class="card-text">Title details</p>
+                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mg">
+                                <div class="card">
+                                    <img class="card-img-top"
+                                        src="https://cf.shopee.vn/file/dee1682bb885c7465b94e1f064221127"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rate: 2.000.000 VNĐ</h4>
+                                        <p class="card-text">Title details</p>
+                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mg">
+                                <div class="card">
+                                    <img class="card-img-top"
+                                        src="https://cf.shopee.vn/file/dee1682bb885c7465b94e1f064221127"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rate: 2.000.000 VNĐ</h4>
+                                        <p class="card-text">Title details</p>
+                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mg">
+                                <div class="card">
+                                    <img class="card-img-top"
+                                        src="https://cf.shopee.vn/file/dee1682bb885c7465b94e1f064221127"
+                                        alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rate: 2.000.000 VNĐ</h4>
+                                        <p class="card-text">Title details</p>
+                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                  </div>
+                    </div>
+                </div>
+
+
             </div>
-    
-    
-            <div class="introduce">
+
+
+            <div class="introduce" style="display: none;">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-6">
-                            <img src="/store/assets/images/about-us_bg.jpg" alt="" >
+                            <img src="/store/assets/images/about-us_bg.jpg" alt="">
                         </div>
                         <div class="col-6 part-right">
                             <h2>Giới thiệu về Man Store</h2>
@@ -167,17 +281,50 @@
                                 sẽ có vô vàn những thước đo, quy chuẩn để đánh giá khác nhau tùy
                                 theo không gian và thời gian. Nhưng song song đó, vẫn luôn có
                                 những phẩm chất được xem như là giá trị cốt lõi, không bao giờ
-                                thay đổi ở bất cứ đâu, bất cứ thời điểm nào đối với một người đàn ông. 
-
-                            ”</p>
+                                thay đổi ở bất cứ đâu, bất cứ thời điểm nào đối với một người đàn ông.
+                                ”</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
-    
 
 
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.autoplay').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 </body>
+
 </html>
