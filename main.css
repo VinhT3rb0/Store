@@ -195,3 +195,6 @@ body {
     width: 13%;
     background-color: white;
 }
+.part-right p{
+    text-align: justify;
+}
