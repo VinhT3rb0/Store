@@ -100,20 +100,19 @@ body {
 }
 
 .bgr{
-    background-image: url('./assets/images/Summer\ Style.png');
+    background-image: url('./assets/images/Summer Style.png');
     background-position: center;
     height: 600px;
 }
 
 .bgr2{
     background-image: url('./assets/images/Men\'s\ Formal\ Wear\ \(1\).png');
-
     background-position: center;
     height: 600px;
 }
 
 .bgr3{
-    background-image: url('./assets/images/Untitled1.png/tr c');
+    background-image: url('./assets/images/Untitled1.png');
     background-size: cover;
     height: 600px;
 }
