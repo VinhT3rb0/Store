@@ -145,6 +145,11 @@ body {
     justify-content: space-around;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.banner_home2{
+    margin: 20px 108px;
+    overflow: hidden;
 
 }
 
@@ -167,6 +172,8 @@ body {
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
 }
 
+
+
 .bg_banner2{
     border-radius: 10px;
 
@@ -185,13 +192,77 @@ body {
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
 }
 
-.bg_banner1 a,.bg_banner2 a{
+.bg_banner3{
+    position: relative;
+    border-radius: 10px;
+    width: 320px;
+    height: 300px;
+    /* background-image: url(./assets/banner1.jpg); */
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: 88% 37%;
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+
+}
+
+.bg_banner3:hover{
+    width: 320px;
+    max-width: 320px;
+    transform: scale(1.1);
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+
+.bg_banner4{
+    position: relative;
+    border-radius: 10px;
+    width: 550px;
+    height: 300px;
+    /* background-image: url(./assets/banner1.jpg); */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-repeat: no-repeat;
+    background-position: 88% 37%;
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+
+}
+
+.bg_banner4:hover{
+    width: 550px;
+    max-width: 550px;
+    transform: scale(1.1);
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+
+.bg_banner5{
+    position: relative;
+    border-radius: 10px;
+    width: 320px;
+    height: 300px;
+    /* background-image: url(./assets/banner1.jpg); */
+    background-color: green;
+    background-repeat: no-repeat;
+    background-position: 88% 37%;
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+
+}
+
+.bg_banner5:hover{
+    width: 320px;
+    max-width: 320px;
+    transform: scale(1.1);
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+
+.bg_banner1 a,.bg_banner2 a,.bg_banner3 a,.bg_banner4 a,.bg_banner5 a{
     z-index: 30;
     text-decoration: none;
     color: white;
 }
 
-.bg_banner1 .banner_content1,  .bg_banner2 .banner_content2{
+.bg_banner1 .banner_content1,  .bg_banner2 .banner_content2,
+.bg_banner3 .banner_content3, .bg_banner4 .banner_content4,
+.bg_banner5 .banner_content5
+{
     position: absolute;
     padding: 130px 50px;
 }
@@ -227,3 +298,86 @@ body {
 .card {
     margin: 0 10px;
 }
+
+.PopularProduct{
+    margin: 20px 106px;
+}
+
+.PopularProduct h1{
+    font-size: 30px;
+}
+
+.setupCard img {
+    height: 212px;
+}
+
+.setupContent h5{
+    font-size: 15px;
+}
+
+.setupContent{
+    border-top: 1px solid #c89979;
+}
+
+.setupContent p{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #c89979;
+}
+
+.setupContent a{
+    margin: 0px 28px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    background-color: #c89979;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.information_footer
+{
+    display : flex ;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    background: #333;
+    padding: 70px 20px;
+    color: white;
+
+}
+
+
+/* Cho các cột chữ dọc lại */
+.about_us_footer ,.product_footer ,.community_footer ,.service_footer,.support_footer
+{
+    flex-direction: column;
+    display: flex;
+
+}
+
+.title_footer
+{
+    color: white;
+    margin-bottom : 16px;
+}
+
+
+.community_footer a, .about_us_footer a, .product_footer a, .service_footer a, .support_footer a{
+    text-decoration: none;
+    color : white;
+    /* opacity: 0.7; */
+}
+
+ a+a {
+    margin-top : 16px;
+}
+
+.information_footer a:hover
+{
+    color : rgb(227, 160, 160) ;
+}
+
+
