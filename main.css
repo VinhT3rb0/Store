@@ -100,13 +100,13 @@ body {
 }
 
 .bgr{
-    background-image: url('./assets/slide-bg-1.jpg');
+    background-image: url('./assets/images/Summer\ Style.png');
     background-position: center;
     height: 600px;
 }
 
 .bgr2{
-    background-image: url('./assets/slide-bg-2.jpg');
+    background-image: url('./assets/images/manstyle.png');
 
     background-position: center;
     height: 600px;
