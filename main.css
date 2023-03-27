@@ -82,7 +82,7 @@ body {
 
 
 #wrapper{
-    height: 4000px;
+    /* height: 4000px; */
 }
 
 
@@ -157,7 +157,7 @@ body {
     border-radius: 10px;
     width: 500px;
     height: 350px;
-    background-image: url(./assets/banner1.jpg);
+    background-image: url(./assets/images/1111.png);
     background-repeat: no-repeat;
     background-position: 88% 37%;
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
@@ -169,6 +169,30 @@ body {
     max-width: 500px;
     transform: scale(1.1);
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+
+.home{
+
+}
+
+.introduce{
+
+}
+
+.brand{
+
+}
+
+.ProductItem{
+    
+}
+
+.Blogs{
+    
+}
+
+.Hotline{
+    
 }
 
 
