@@ -20,7 +20,7 @@ body {
 
 #wrapper{
     background-color: #ffffff;
-    background-image: linear-gradient(0deg, #dbdada 0%, #f1f5f5 100%);
+    background-image: linear-gradient(0deg, #b3b0b0 0%, #f1f5f5 100%);
     
 }
 
@@ -323,7 +323,7 @@ body {
     font-weight: bold;
     margin-bottom: 5px;
     font-size: 13px;
-    color: #c89979;
+    color: #0e0e0d;
 }
 
 .setupContent a{
@@ -333,7 +333,7 @@ body {
     text-decoration: none;
     font-size: 12px;
     color: white;
-    background-color: #c89979;
+    background-color: #a7a5a5;
     text-transform: uppercase;
     font-weight: bold;
 }
