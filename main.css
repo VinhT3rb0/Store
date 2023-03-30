@@ -19,8 +19,8 @@ body {
 }
 
 #wrapper{
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-color: #ffffff;
+    background-image: linear-gradient(0deg, #5f5d5d 0%, #f1f5f5 100%);
     
 }
 
@@ -82,7 +82,7 @@ body {
 
 
 #wrapper{
-    /* height: 4000px; */
+    height: 4000px;
 }
 
 
@@ -100,13 +100,14 @@ body {
 }
 
 .bgr{
-    background-image: url('./assets/images/Summer Style.png');
+    background-image: url('./assets/images/Summer\ Style.png');
     background-position: center;
     height: 600px;
 }
 
 .bgr2{
     background-image: url('./assets/images/Men\'s\ Formal\ Wear\ \(1\).png');
+
     background-position: center;
     height: 600px;
 }
@@ -171,30 +172,6 @@ body {
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
 }
 
-.home{
-
-}
-
-.introduce{
-
-}
-
-.brand{
-
-}
-
-.ProductItem{
-    
-}
-
-.Blogs{
-    
-}
-
-.Hotline{
-    
-}
-
 
 
 .bg_banner2{
@@ -202,7 +179,7 @@ body {
 
     width: 500px;
     height: 350px;
-    background-image: url(./assets/banner2.jpg);
+    background-image: url(./assets/images/shoes.jpg);
     background-repeat: no-repeat;
     background-position: 58% 43%;
     transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
