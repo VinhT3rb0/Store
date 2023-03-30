@@ -14,80 +14,80 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item" value="1">
-              <a class="nav-link" aria-current="page" href="#">Trang chủ</a>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" id="Home" href="#">Trang chủ</a>
             </li>
 
-            <li class="nav-item" value="2">
-              <a class="nav-link " aria-current="page" href="#">Giới thiệu</a>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" id="Introduce" href="#">Giới thiệu</a>
             </li>
 
-            <li class="nav-item" value="3">
-              <a class="nav-link" href="#">Thương hiệu</a>
+            <li class="nav-item">
+              <a class="nav-link" id="Brand" href="#">Thương hiệu</a>
             </li>
 
-            <li class="nav-item" value="4">
-              <a class="nav-link" href="#">Sản phẩm</a>
-            </li>
-
-            <li class="nav-item" value="5">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-
-            <li class="nav-item" value="6">
-              <a class="nav-link" href="#">Liên hệ</a>
-            </li>
+            
           </ul>
         </div>
       </div>
     </nav>
+
+    <div class="home" style="background-color: red; width: 200px; height: 200px;">
+
+    </div>
+
+    <div class="introduce"  style="display: none; background-color: aqua; width: 200px; height: 200px;">
+
+    </div>
+
+    <div class="brand" style="display: none; background-color: yellow; width: 200px; height: 200px;">
+
+    </div>
+
   </div>
 
+    <script>
+        var ulList = document.querySelector("#Home");
+        var ulList2 = document.querySelector("#Introduce");
+        var ulList3 = document.querySelector("#Brand");
+
+        var home = document.querySelector(".home")
+        var introduce = document.querySelector(".introduce")
+        var brand = document.querySelector(".brand")
+
+        ulList.addEventListener("click", function() {
+            this.style.color = "red";
+            ulList2.style.color = "#0000008C";
+            ulList3.style.color = "#0000008C";
+
+            introduce.style.display = "none";
+            brand.style.display = "none";
+            home.style.display = "block";
+        });
+
+        ulList2.addEventListener("click", function() {
+            this.style.color = "red";
+            ulList.style.color = "#0000008C";
+
+            introduce.style.display = "block";
+            brand.style.display = "none";
+            home.style.display = "none";
+        });
+
+        ulList3.addEventListener("click", function() {
+            this.style.color = "red";
+            ulList.style.color = "#0000008C";
+            ulList2.style.color = "#0000008C";
 
 
+            introduce.style.display = "none";
+            home.style.display = "none";
+            brand.style.display = "block";
 
-  <script>
-    var ulList = document.querySelectorAll(".navbar-nav li");
-    for (var i = 0; i < ulList.length; i++) {
-      console.log(ulList[i]);
-      // if (ulList[i].value == 2) {
-      //   ulList[i].addEventListener("click", function () {
+        });
+    
 
-      //     alert("2");
-
-      //   });
-      // }
-      // if (ulList[i].value == 4) {
-      //   ulList[i].addEventListener("click", function () {
-
-      //     alert("4");
-
-      //   });
-      // }
-
-      switch (ulList[i].value) {
-        case 1:
-          ulList[i].addEventListener("click", function () {
-
-            alert("1");
-
-          });
-          break;
-
-        case 2:
-          ulList[i].addEventListener("click", function () {
-
-            alert("2");
-
-          });
-          break;
-
-        default:
-          break;
-      }
-    }
-
-  </script>
+    </script>
 
 </body>
 
