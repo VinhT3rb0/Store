@@ -7,7 +7,7 @@ var introduce = document.querySelector(".introduce")
 var brand = document.querySelector(".brand")
 
 ulList.addEventListener("click", function() {
-    this.style.color = "red";
+    this.style.color = "rgb(197, 183, 79)";
     ulList2.style.color = "white";
     // ulList3.style.color = "white";
 
@@ -17,7 +17,7 @@ ulList.addEventListener("click", function() {
 });
 
 ulList2.addEventListener("click", function() {
-    this.style.color = "red";
+    this.style.color = "rgb(197, 183, 79)";
     ulList.style.color = "white";
 
     introduce.style.display = "block";
