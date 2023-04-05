@@ -36,3 +36,9 @@ ulList2.addEventListener("click", function() {
 //     brand.style.display = "block";
 
 // });
+
+// var a = document.querySelectorAll('a');
+// console.log(a);
+// a.addEventListener('click', function (e){
+//     e.preventDefault();
+// })
