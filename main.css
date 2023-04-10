@@ -131,6 +131,69 @@ body {
     z-index: 99;
 }
 
+#dangnhap{
+    overflow: hidden;
+    position: relative;
+    color: white;
+    /* background: transparent; */
+    background-color: rgb(165, 190, 212);
+    opacity: 0.8;
+    backdrop-filter: blur(2px);
+    width: 400px;
+    height: 440px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* transform: scale(0); */
+    z-index: 999;
+    transition: transform .100s ease ,height .2s ease;
+}
+
+#dangnhap .addClass2{
+    animation: modalFaceIn ease 0.5s;
+}
+
+@keyframes modalFaceIn{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+#dangnhap .form h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+#dangnhap .form{
+    position: absolute;
+    width: 100%;
+    padding: 0 50px;
+    
+}
+
+#dangnhap .form a{
+    text-decoration: none;
+}
+
+#dangnhap .close-icon{
+    padding: 0 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(214, 55, 55);
+    border-bottom-left-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 99;
+}
+
 .setHover:hover{
     background-color: #c89979;
 }
@@ -139,6 +202,8 @@ body {
     font-weight: 600;
     padding-bottom: 10px;
 }
+
+
 
 .banner_home{
     margin: 40px 120px;

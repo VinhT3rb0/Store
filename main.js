@@ -42,3 +42,15 @@ ulList2.addEventListener("click", function() {
 // a.addEventListener('click', function (e){
 //     e.preventDefault();
 // })
+
+var login = document.querySelector('.login button[type = button]');
+
+
+login.addEventListener('click', function(){
+    document.querySelector('#dangnhap').style.display = 'flex'
+})
+
+var closeLogin = document.querySelector('#dangnhap .close-icon')
+    closeLogin.addEventListener('click', function () {
+        document.querySelector('#dangnhap').style.display = 'none';
+    })
