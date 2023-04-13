@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" rel="preconnect"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo">
+                <a href="/Store/index.html">
+                    <img src="/store/assets/images/336051776_195820769748830_9036133639364375530_n.png" alt=""
+                        style="width: 200px;height: 60px;">
+                </a>
+            </div>
+
+            <div class="input">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <button class="btn  btn-outline-secondary"
+                        style="color: white; width: 80px; background-color: rgb(197, 183, 79);" type="button"
+                        id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="login">
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-dark changeText">Đăng nhập</button>
+
+                    <!-- <p class="changeText"></p> -->
+                    <div>
+                        <!-- <i class="fa-solid fa-cart-plus"></i> -->
+                        <i class="fa-sharp fa-solid fa-circle-user fs-1 px-2"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="loginUser">
+                <button type="button" class="btn btn-dark changeText"></button>
+                <span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </span>
+            </div> -->
+
+        </div>
+
+        <div class="header_two">
+            <nav class="navbar navbar-expand-lg navbar-light " id="color">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" id="Home" aria-current="page" href="#">Trang chủ</a>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " id="Introduce" aria-current="page" href="#">Giới thiệu</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="Brand" href="#">Thương hiệu</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sản phẩm</a>
+                                <div class="dropdown-content ">
+                                    <a href="../Store/suit/suit.html">Suit 2023</a>
+                                    <a href="../Store/quanau/quanau.html">Quần Âu</a>
+                                    <a href="../Store/giayda/giayda.html">Giày Da</a>
+                                    <a href="../Store/thatlung/thatlung.html">Thắt Lưng</a>
+                                    <a href="../Store/aosomi/aosomi.html">Áo sơ mi</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blogs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+        <div id="InfoProduct1">
+            <div class="InfoProduct d-flex justify-content-center" style="margin: 0 50px;">
+                <div class="InfoProduct_left d-flex me-4">
+                    <div class="img pe-2"><img
+                            src="https://product.hstatic.net/1000333436/product/13__copy__8797af5827f444b5885a9a3ed955028d_master.jpg"
+                            alt=""></div>
+                    <div class="img"><img
+                            src="https://product.hstatic.net/1000333436/product/13__copy__8797af5827f444b5885a9a3ed955028d_master.jpg"
+                            alt=""></div>
+                </div>
+
+                <div class="InfoProduct_right" style="padding-left: 40px;">
+                    <h1>ÁO VEST BEIGE HỌA TIẾT HERRINGBONE - AV326</h1>
+                    <p>2,950,000đ</p>
+                    <p>Loại: VEST ADAM MSP: AV32648</p>
+                    <ul>
+                        <li><b>SUIT NAM</b></li>
+                        <li><b>MÃ SẢN PHẨM: AV326</b></li>
+                        <li><b>Màu sắc: Light Beige (Be sáng)</b></li>
+                        <li><b>Họa tiết: Herringbone (Họa tiết xương cá)</b></li>
+                        <li><b>Chất liệu: 80% Cotton - 20% Poly</b></li>
+                        <li><b>Kiểu dệt: Twill</b></li>
+                        <li><b>Size: 48 - 50 - 52 - 54 - 56</b></li>
+                    </ul>
+
+                    <p>Giá cả bộ: 3.800.000VNĐ</p>
+                    <div class="my-2">
+                        <span>Kích thước: </span>
+                        <label class="me-3">
+                            <input type="radio" name="number" value="47">
+                            47
+                        </label>
+                        <label class="me-3">
+                            <input type="radio" name="number" value="48">
+                            48
+                        </label>
+                        <label class="me-3">
+                            <input type="radio" name="number" value="50">
+                            50
+                        </label>
+                        <label class="me-3">
+                            <input type="radio" name="number" value="51">
+                            51
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <span class="me-4">Số lượng: </span>
+                        <button class="decrease"
+                            style="font-size: 20px;padding: 3px 10px;border: none;cursor: pointer;">-</button>
+                        <input style="width: 50px;text-align: center;" type="text" class="quantity" value="1">
+                        <button class="increase"
+                            style="font-size: 16px;padding: 5px 10px;background-color: #ccc;border: none;cursor: pointer;">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin: auto; width: 50%; text-align: center;font-size: 17px;">
+                <div>
+                    <p>
+                        <span class="fw-bold ">Miêu tả chi tiết:</span>
+                        Kiểu dáng: Slim fit, sang trọng cách tân dựa trên tỷ lệ hình thể người đàn ông Việt Nam giúp
+                        bộ đồ trông sang trọng nhưng vẫn giữ được sự trẻ trung và hạn chế khuyết điểm.
+                        Cấu trúc: 2 Khuy ve K túi tròn Đây là cấu trúc phù hợp với đại đa số người đàn ông Việt
+                        Nam, được cách điệu thêm với túi ốp tạo điểm nhấn cho chiếc áo, ngoài ra có thể tách riêng
+                        ra thành một chiếc Demi mặc rời giúp tủ đồ của quý ông thật phong phú hơn, với việc cầu vai
+                        được đệm cao giúp tôn hình thể người đàn ông Việt Nam
+
+                        Kiểu dệt Twill là cách dệt sử dụng lần lượt 2 sợi vải ngang nằm dưới và sau đó là nằm trên 2
+                        sợi vải dọc tạo nên một bề mặt các đường vân chéo đặc biệt. Loại vải vân chéo này dày và mềm
+                        mại, có khả năng chống nhăn khá tốt và dễ dàng là ủi.
+                        Giày phù hợp: Nâu nhạt/Nâu coffee/Đen
+                        Sơ mi phù hợp: Sơ mi trắng/đen/Nâu/Beige
+
+                        Hoạ tiết Herringbone giúp tạo ra điểm nhấn cho bộ suits, khiến cho người mặc cảm thấy độ sâu
+                        hơn, bắt mắt hơn, Đây cũng là yếu tố giúp cân bằng lại các chi tiết của tổng thể, cũng như
+                        là sự cân bằng cổ điển và hiện đại, mang tới vẻ đẹp tinh tế và ấn tượng nhất.
+
+                        Chất liệu vải được sử dụng 80% cotton và 20% poly giúp bộ Suit thoáng mát, thấm hút tốt và
+                        vẫn giữ phom, hạn chế nhăn nhàu.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="information_footer">
+
+            <div class="about_us_footer">
+                <h3 class="title_footer">Về chúng tôi</h3>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Thông tin thêm</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Cộng đồng</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Tin tức</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Cửa Hàng</a>
+
+            </div>
+            <div class="service_footer">
+                <h3 class="title_footer">Dịch Vụ</h3>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Tải xuống</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Giới thiệu</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Giao dịch</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Dịch Vụ</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Ứng dụng</a>
+            </div>
+
+
+            <div class="support_footer">
+                <h3 class="title_footer">Hỗ trợ</h3>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Phản hồi</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Hướng dẫn chọn size </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Hướng dẫn thanh toán</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Quy định đổi hàng</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Hướng dẫn mua hàng</a>
+            </div>
+
+
+
+            <div class="community_footer">
+                <h3 class="title_footer">Community</h3>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class=" fab fa-facebook-messenger"></i>
+                    Messenger
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-tiktok"></i>
+                    Tiktok
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <div id="dangnhap" class="addClass2">
+            <div class="close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <form action="#" class="form">
+                <h2>Login</h2>
+                <div class="mb-3 mt-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control my-2" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control my-2" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        <a href="" class="ms-3" style="color: rgb(222, 152, 222);">Forgot Password</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary ">Login</button>
+                <div class="pt-2">
+                    <span> Don't have a account?</span>
+                    <a href="" class="ms-2">Register Now</a>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+
+
+    <!-- <script src="jquery-3.6.1.min.js"></script> -->
+    <script src="./main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.autoplay').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
