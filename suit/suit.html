@@ -48,10 +48,25 @@
             </div>
 
             <div class="login">
-                <button type="button" class="btn btn-dark">Đăng nhập</button>
-                <span>
-                    <i class="fa-solid fa-cart-plus"></i>
-                </span>
+                <div class="d-flex align-items-center">
+                    <button  type="button" class="btn btn-dark out">Đăng nhập</button>
+                    <div>
+                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;"></p>
+                    </div>
+                    <!-- <p class="changeText"></p> -->
+                    <div>
+                        <!-- <i class="fa-solid fa-cart-plus"></i> -->
+                        <div class="dropdown">
+                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i style="font-size: 24px;" class="fa-light fa-solid fa-circle-user  px-2"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                              <li onclick="clearLocalStorageAndReload()" class="text-center">Đăng xuất</li>
+                            </ul>
+                          </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -255,14 +270,43 @@
                 </a>
             </div>
         </div>
+    </div>
 
-
+    <div>
+        <div id="dangnhap" class="addClass2">
+            <div class="close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <form action="#" class="form">
+                <h2>Login</h2>
+                <div class="mb-3 mt-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control my-2" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control my-2" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        <a href="" class="ms-3" style="color: rgb(222, 152, 222);">Forgot Password</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary ">Login</button>
+                <div class="pt-2">
+                    <span> Don't have a account?</span>
+                    <a href="" class="ms-2">Register Now</a>
+                </div>
+            </form>
+        </div>
     </div>
 
 
 
     <!-- <script src="jquery-3.6.1.min.js"></script> -->
-    <script src="./main.js"></script>
+    <script src="../main.js"></script>
+    <script src="../GetAcc/GetAcc.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
         integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="

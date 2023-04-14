@@ -41,11 +41,12 @@ ulList2.addEventListener("click", function() {
 
 
 
-var a = document.querySelector('form');
-console.log(a);
-a.addEventListener('click', function (e){
-    e.preventDefault();
-})
+
+// var a = document.querySelector('form');
+// console.log(a);
+// a.addEventListener('click', function (e){
+//     e.preventDefault();
+// })
 
 // window.addEventListener('click', function () {
 //     document.querySelector('#dangnhap').style.display = 'none';
@@ -66,20 +67,20 @@ var closeLogin = document.querySelector('#dangnhap .close-icon')
 
 
 
-document.querySelector('button[type=submit]').addEventListener('click', ()=>{
-    getUser();
-})
+// document.querySelector('button[type=submit]').addEventListener('click', ()=>{
+//     getUser();
+// })
 
 
-function getUser(){
-    var getAcc = document.querySelector("input[name=email]").value
-    console.log(getAcc);
+// function getUser(){
+//     var getAcc = document.querySelector("input[name=email]").value
+//     console.log(getAcc);
 
-    var changeText = document.querySelector(".changeText");
-    console.log(changeText);
-    changeText.innerText = getAcc;
-    document.querySelector('#dangnhap').style.display = 'none';
-}
+//     var changeText = document.querySelector(".changeText");
+//     console.log(changeText);
+//     changeText.innerText = getAcc;
+//     document.querySelector('#dangnhap').style.display = 'none';
+// }
 
 
 

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form id="comment-form">
+            <input type="text" id="comment-input" placeholder="Add a comment...">
+            <button type="submit">Post</button>
+        </form>
+        <ol id="comment-list">
+        </ol>
+    </div>
+
+    <!-- <form id="user-form">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        
+        <button type="submit">Save</button>
+
+        <p class="ListName"></p>
+        <button onclick="clearLocalStorageAndReload()">Xóa toàn bộ dữ liệu và tải lại trang</button>
+    </form> -->
+
+    
+    <script>
+
+        let comments = [];
+        let commentListHTML = '';
+
+        function addComment(comment) {
+            comments.push(comment);
+            saveCommentsToLocalStorage();
+        }
+
+        function editComment(index, comment) {
+            comments[index] = comment;
+            saveCommentsToLocalStorage();
+        }
+
+        function deleteComment(index) {
+            comments.splice(index, 1);
+            saveCommentsToLocalStorage();
+        }
+
+        function saveCommentsToLocalStorage() {
+            localStorage.setItem('comments', JSON.stringify(comments));
+        }
+
+        function getCommentsFromLocalStorage() {
+            const commentsString = localStorage.getItem('comments');
+            if (commentsString) {
+                comments = JSON.parse(commentsString);
+                renderComments();
+            }
+        }
+
+        function renderComments() {
+            const commentList = document.querySelector('#comment-list');
+            commentListHTML = '';
+            comments.forEach((comment, index) => {
+                commentListHTML += `
+                <li>
+                    <div class="comment">${comment}</div>
+                    <div>
+                    <button class="edit-button" data-index="${index}">Edit</button>
+                    <button class="delete-button" data-index="${index}">Delete</button>
+                    </div>
+                </li>
+                `;
+            });
+            commentList.innerHTML = commentListHTML;
+
+            const commentForm = document.querySelector('#comment-form');
+            commentForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const commentInput = document.querySelector('#comment-input');
+                const comment = commentInput.value.trim();
+                if (comment !== '') {
+                    addComment(comment);
+                    commentInput.value = '';
+                    renderComments();
+
+                }
+            });
+
+            const editButtons = document.querySelectorAll('.edit-button');
+            editButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = button.dataset.index;
+                    const comment = comments[index];
+                    const newComment = prompt('Edit comment:', comment);
+                    if (newComment !== null) {
+                        editComment(index, newComment);
+                        renderComments();
+                    }
+                });
+            });
+
+            const deleteButtons = document.querySelectorAll('.delete-button');
+            deleteButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = button.dataset.index;
+                    deleteComment(index);
+                    renderComments();
+                });
+            });
+        }
+
+        renderComments();
+        getCommentsFromLocalStorage();
+
+    </script>
+    <!-- <script>
+        function saveUserDataToLocalStorage(userData) {
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        users.push(userData);
+        localStorage.setItem('users', JSON.stringify(users));
+        }
+
+        function clearLocalStorageAndReload() {
+        localStorage.clear();
+        location.reload();
+        }
+
+        function renderUserList() {
+            // const userList = document.querySelector('#user-list');
+            // userList.innerHTML = '';
+            
+            const ListName = document.querySelector('.ListName')
+            const Acc = JSON.parse(localStorage.getItem('users')) || [];
+            Acc.forEach((user) => {
+                const AccName = `
+                    <p>${user.email}</p>
+                `;
+                ListName.innerHTML = AccName;
+            });
+
+            // const users = JSON.parse(localStorage.getItem('users')) || [];
+           
+
+            // users.forEach((user) => {
+            //     const userHTML = `
+            //     <li>
+            //         <div>Name: ${user.name}</div>
+            //         <div>Email: ${user.email}</div>
+            //         <div>Phone: ${user.phone}</div>
+            //     </li>
+            //     `;
+            //     userList.insertAdjacentHTML('beforeend', userHTML);
+            // });
+        }
+
+        const userForm = document.querySelector('#user-form');
+        userForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        
+        const emailInput = document.querySelector('#email');
+        
+        const userData = {
+            email: emailInput.value
+        };
+        
+        saveUserDataToLocalStorage(userData);
+        renderUserList();
+            emailInput.value = '';
+        });
+
+        window.addEventListener('load', () => {
+            renderUserList();
+        });
+    </script> -->
+</body>
+
+</html>
