@@ -49,13 +49,23 @@
 
             <div class="login">
                 <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-dark changeText">Đăng nhập</button>
-
+                    <button  type="button" class="btn btn-dark out">Đăng nhập</button>
+                    <div>
+                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;"></p>
+                    </div>
                     <!-- <p class="changeText"></p> -->
                     <div>
                         <!-- <i class="fa-solid fa-cart-plus"></i> -->
-                        <i class="fa-sharp fa-solid fa-circle-user fs-1 px-2"></i>
+                        <div class="dropdown">
+                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i style="font-size: 24px;" class="fa-light fa-solid fa-circle-user  px-2"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                              <li onclick="clearLocalStorageAndReload()" class=" text-center">Đăng xuất</li>
+                            </ul>
+                          </div>
                     </div>
+
                 </div>
             </div>
 
@@ -509,6 +519,7 @@
 
     <!-- <script src="jquery-3.6.1.min.js"></script> -->
     <script src="./main.js"></script>
+    <script src="./LocalStorage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
         integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
