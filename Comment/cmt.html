@@ -25,6 +25,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="../main.css">
     <title>Document</title>
+    <style>
+        .listcmt {
+            font-size: 20px;
+            margin: 10px 0;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +40,7 @@
             <div class="logo">
                 <a href="/Store/index.html">
                     <img src="/store/assets/images/336051776_195820769748830_9036133639364375530_n.png" alt=""
-                style="width: 200px;height: 60px;">
+                        style="width: 200px;height: 60px;">
                 </a>
             </div>
 
@@ -49,21 +56,23 @@
 
             <div class="login">
                 <div class="d-flex align-items-center">
-                    <button  type="button" class="btn btn-dark out">Đăng nhập</button>
+                    <button type="button" class="btn btn-dark out">Đăng nhập</button>
                     <div>
-                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;"></p>
+                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;">
+                        </p>
                     </div>
                     <!-- <p class="changeText"></p> -->
                     <div>
                         <!-- <i class="fa-solid fa-cart-plus"></i> -->
                         <div class="dropdown">
-                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button"
+                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i style="font-size: 24px;" class="fa-light fa-solid fa-circle-user  px-2"></i>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                              <li onclick="clearLocalStorageAndReload()" class=" text-center">Đăng xuất</li>
+                                <li onclick="clearLocalStorageAndReload()" class=" text-center">Đăng xuất</li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
 
                 </div>
@@ -82,21 +91,20 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " id="Introduce" aria-current="page" href="../index.html">Giới thiệu</a>
+                                <a class="nav-link " id="Introduce" aria-current="page" href="../index.html">Giới
+                                    thiệu</a>
                             </li>
-
-                            
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sản phẩm</a>
                                 <div class="dropdown-content">
                                     <a href="../suit/suit.html">Suit 2023</a>
                                     <a href="../quanau/quanau.html">Quần Âu</a>
-                                    <a href="../giayda/giayda.html">Giày Da</a>
+                                    <a href="./giayda.html">Giày Da</a>
                                     <a href="../thatlung/thatlung.html">Thắt Lưng</a>
-                                    <a href="./aosomi.html">Áo sơ mi</a>
+                                    <a href="../aosomi/aosomi.html">Áo sơ mi</a>
                                 </div>
-                            </li>   
+                            </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Blogs</a>
@@ -111,102 +119,42 @@
             </nav>
         </div>
 
-        <div class="body">
-            <h1 class="text-center my-3">ÁO SƠ MI</h1>
-            <div class="d-flex  m-auto flex-wrap" style="max-width: 972px;">
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/80__copy__9a853abe69b74d8ba7d30119d421fd7e_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI XANH TRƠN - TXTK10</h5>
-                        <p class="text-center">950,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
+        <div class="body ms-3">
+            <h1 class="text-center mt-3">Đánh giá sản phẩm</h1>
+            <form id="comment-form">
+                <input class="rounded" style="width: 500px; height: 38px;" type="text" id="comment-input" placeholder="Add a comment...">
+                <button class="btn btn-dark" type="submit">Post</button>
+            </form>
+            <div id="comment-list">
+                <div class="listcmt">
+                    <div class="comment">Comment: Sản phẩm tốt</div>
                 </div>
 
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/11__copy__c3abb224545248c6966e9541768ff47e_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI TRẮNG HỌA TIẾT - SMC103</h5>
-                        <p class="text-center">750,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
+                <div class="listcmt">
+                    <div class="comment">Comment: Sản phẩm tốt</div>
                 </div>
 
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/0_banner__copy__f448343653fb4ed1b0ccefddb5fc7d9a_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI ĐEN HỌA TIẾT LÁ - SMC115</h5>
-                        <p class="text-center">750,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
+                <div class="listcmt">
+                    <div class="comment">Comment: Sản phẩm tốt</div>
                 </div>
 
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/14__copy__7b55d119f6e546429d451f746c844c91_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI ĐEN HỌA TIẾT - SMC111</h5>
-                        <p class="text-center">750,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
+                <div class="listcmt">
+                    <div class="comment">Comment: Sản phẩm tốt</div>
                 </div>
 
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/13__copy__84afd8bae17d4626a2d4baca98e329d3_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI ĐEN KARO - SMC106</h5>
-                        <p class="text-center">750,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
+                <div class="listcmt">
+                    <div class="comment">Comment: Sản phẩm tốt</div>
                 </div>
 
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/16__copy__a039f76113b04c368e29c5c22d29ccc7_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI ĐEN KẺ SỌC - SMC107</h5>
-                        <p class="text-center">750,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
+                <div class="listcmt">
+                    <div class="comment">Comment: Sản phẩm tốt</div>
                 </div>
 
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/17.1__copy__851e5bbe4dd34ac79e782bdd59266369_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI ĐEN HỌA TIẾT LÁ - SMC105</h5>
-                        <p class="text-center">750,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
-                </div>
-
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/2__copy__e506e677339444549d6a6debaa5b3aa6_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI TRẮNG HỌA TIẾT - SMC108</h5>
-                        <p class="text-center">750,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
-                </div>
-
-                <div class="card setupCard" style="width: 19rem;">
-                    <img src="https://product.hstatic.net/1000333436/product/60__copy__986df4ca071344fb9dcd7bd34dea7d5a_master.gif"
-                        style="width: 100%;height: auto;" class="card-img-top" alt="...">
-                    <div class="card-body setupContent">
-                        <h5 class="card-title text-center">SƠ MI XANH TT SỌC - TXTK13</h5>
-                        <p class="text-center">950,000₫</p>
-                        <a href="#" class=" text-center d-block unload">Thêm vào giỏ</a>
-                    </div>
-                </div>
             </div>
+            
         </div>
 
-        
+
 
         <div class="information_footer">
 
@@ -220,7 +168,7 @@
             </div>
 
 
-        
+
 
             <div class="service_footer">
                 <h3 class="title_footer">Dịch Vụ</h3>
@@ -267,8 +215,9 @@
                 </a>
             </div>
         </div>
+
+
     </div>
-    
     <div>
         <div id="dangnhap" class="addClass2">
             <div class="close-icon">
@@ -299,48 +248,101 @@
         </div>
     </div>
 
-
-
     <!-- <script src="jquery-3.6.1.min.js"></script> -->
     <script src="../main.js"></script>
     <script src="../LocalStorage.js"></script>
     <script src="../GetAcc/GetAcc.js"></script>
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
-        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $('.autoplay').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
 
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
+        let comments = [];
+        let commentListHTML = '';
+
+        function addComment(comment) {
+            comments.push(comment);
+            saveCommentsToLocalStorage();
+        }
+
+        function editComment(index, comment) {
+            comments[index] = comment;
+            saveCommentsToLocalStorage();
+        }
+
+        function deleteComment(index) {
+            comments.splice(index, 1);
+            saveCommentsToLocalStorage();
+        }
+
+        function saveCommentsToLocalStorage() {
+            localStorage.setItem('comments', JSON.stringify(comments));
+        }
+
+        function getCommentsFromLocalStorage() {
+            const commentsString = localStorage.getItem('comments');
+            if (commentsString) {
+                comments = JSON.parse(commentsString);
+                renderComments();
+            }
+        }
+
+        function renderComments() {
+            const commentList = document.querySelector('#comment-list');
+            commentListHTML = '';
+            comments.forEach((comment, index) => {
+                commentListHTML += `
+                <div class="listcmt">
+                    <div class="comment">Comment: ${comment}</div>
+                    
+                </div>
+                `;
+            });
+
+            // <div>
+            //     <button class="edit-button" data-index="${index}">Edit</button>
+            //     <button class="delete-button" data-index="${index}">Delete</button>
+            // </div>
+            commentList.innerHTML = commentListHTML;
+
+            const commentForm = document.querySelector('#comment-form');
+            commentForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const commentInput = document.querySelector('#comment-input');
+                const comment = commentInput.value.trim();
+                if (comment !== '') {
+                    addComment(comment);
+                    commentInput.value = '';
+                    renderComments();
+
                 }
-            ]
-        });
+            });
+
+            const editButtons = document.querySelectorAll('.edit-button');
+            editButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = button.dataset.index;
+                    const comment = comments[index];
+                    const newComment = prompt('Edit comment:', comment);
+                    if (newComment !== null) {
+                        editComment(index, newComment);
+                        renderComments();
+                    }
+                });
+            });
+
+            const deleteButtons = document.querySelectorAll('.delete-button');
+            deleteButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const index = button.dataset.index;
+                    deleteComment(index);
+                    renderComments();
+                });
+            });
+        }
+
+        renderComments();
+        getCommentsFromLocalStorage();
+
     </script>
+
 </body>
 
 </html>

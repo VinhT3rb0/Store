@@ -49,32 +49,29 @@
 
             <div class="login">
                 <div class="d-flex align-items-center">
-                    <button  type="button" class="btn btn-dark out">Đăng nhập</button>
+                    <button type="button" class="btn btn-dark out">Đăng nhập</button>
                     <div>
-                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;"></p>
+                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;">
+                        </p>
                     </div>
                     <!-- <p class="changeText"></p> -->
                     <div>
                         <!-- <i class="fa-solid fa-cart-plus"></i> -->
                         <div class="dropdown">
-                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle disload" type="button"
+                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i style="font-size: 24px;" class="fa-light fa-solid fa-circle-user  px-2"></i>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                              <li onclick="clearLocalStorageAndReload()" class=" text-center">Đăng xuất</li>
+                                <li onclick="clearLocalStorageAndReload()" class=" text-center disload">Đăng xuất</li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <!-- <div class="loginUser">
-                <button type="button" class="btn btn-dark changeText"></button>
-                <span>
-                    <i class="fa-solid fa-cart-plus"></i>
-                </span>
-            </div> -->
+
 
         </div>
 
@@ -92,9 +89,6 @@
                                 <a class="nav-link " id="Introduce" aria-current="page" href="#">Giới thiệu</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" id="Brand" href="#">Thương hiệu</a>
-                            </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sản phẩm</a>
@@ -108,7 +102,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blogs</a>
+                                <a class="nav-link" id="Comment" href="./Comment/cmt.html">Đánh giá</a>
                             </li>
 
                             <li class="nav-item">
@@ -410,18 +404,16 @@
                 </div>
             </div>
 
-            <!-- Part 3 -->
-            <div class="brand">
 
-            </div>
-            <!-- Part 4 -->
-            <div class="ProductItem">
-
-            </div>
             <!-- Part 5 -->
-            <div class="Blogs">
-
-            </div>
+            <!-- <div class="comment" style="display: none;">
+                <form id="comment-form">
+                    <input type="text" id="comment-input" placeholder="Add a comment...">
+                    <button id="buttonCmt" type="submit2">Post</button>
+                </form>
+                <ol id="comment-list">
+                </ol>
+            </div> -->
             <!-- Part 6 -->
             <div class="Hotline">
 
@@ -490,7 +482,7 @@
             <div class="close-icon">
                 <i class="fa-solid fa-xmark"></i>
             </div>
-            <form action="#" class="form">
+            <form action="#" class="form ">
                 <h2>Login</h2>
                 <div class="mb-3 mt-3">
                     <label for="email">Email:</label>
@@ -509,17 +501,46 @@
                 <button type="submit" class="btn btn-primary ">Login</button>
                 <div class="pt-2">
                     <span> Don't have a account?</span>
-                    <a href="" class="ms-2">Register Now</a>
+                    <a href="#" class="ms-2 nextPage">Register Now</a>
                 </div>
             </form>
         </div>
     </div>
 
+    <div>
+        <div id="resgi" class="addClass2 " style="width: 600px; margin-left: 30%;">
+            <div class="close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <form action="#" class="form formResgister">
+                <h2 style="margin: 20px 0;">Resgister</h2>
+                <div class="mb-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control my-2" id="email2" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control my-2" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="mb-3">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" class="form-control my-2" id="phone" placeholder="Enter password" name="pswd">
+                </div>
 
+                <button type="submit" class="btn btn-primary btnResgister">Resgister <i
+                        class="fa-solid fa-square-g"></i></button>
+                <div class="pt-2">
+                    <span> You have a account?</span>
+                    <a href="#" class="ms-2">Login Now!</a>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- <script src="jquery-3.6.1.min.js"></script> -->
     <script src="./main.js"></script>
     <script src="./LocalStorage.js"></script>
+    <!-- <script src="./cmt.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
         integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
