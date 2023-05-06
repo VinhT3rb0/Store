@@ -131,7 +131,7 @@ body {
     z-index: 99;
 }
 
-#dangnhap{
+#dangnhap, #resgi{
     overflow: hidden;
     position: relative;
     color: white;
@@ -166,13 +166,13 @@ body {
     }
 }
 
-#dangnhap .form h2{
+#dangnhap .form h2,#resgi .form h2{
     text-align: center;
     font-size: 40px;
     margin: 40px 0;
 }
 
-#dangnhap .form{
+#dangnhap .form, #resgi .form{
     position: absolute;
     width: 100%;
     top: 0;
@@ -180,11 +180,11 @@ body {
     
 }
 
-#dangnhap .form a{
+#dangnhap .form a, #resgi .form a{
     text-decoration: none;
 }
 
-#dangnhap .close-icon{
+#dangnhap .close-icon, #resgi .close-icon{
     padding: 0 12px;
     position: absolute;
     top: 0;
