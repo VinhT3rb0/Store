@@ -49,21 +49,23 @@
 
             <div class="login">
                 <div class="d-flex align-items-center">
-                    <button  type="button" class="btn btn-dark out">Đăng nhập</button>
+                    <button type="button" class="btn btn-dark out">Đăng nhập</button>
                     <div>
-                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;"></p>
+                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;">
+                        </p>
                     </div>
                     <!-- <p class="changeText"></p> -->
                     <div>
                         <!-- <i class="fa-solid fa-cart-plus"></i> -->
                         <div class="dropdown">
-                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button"
+                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i style="font-size: 24px;" class="fa-light fa-solid fa-circle-user  px-2"></i>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                              <li onclick="clearLocalStorageAndReload()" class=" text-center">Đăng xuất</li>
+                                <li onclick="clearLocalStorageAndReload()" class=" text-center">Đăng xuất</li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
 
                 </div>
@@ -121,7 +123,7 @@
 
 
         <div id="InfoProduct1">
-            <div class="InfoProduct d-flex justify-content-center" style="margin: 0 50px;">
+            <div class="InfoProduct d-flex justify-content-center" style="padding: 0 50px">
                 <div class="InfoProduct_left d-flex me-4">
                     <div class="img pe-2"><img
                             src="https://product.hstatic.net/1000333436/product/13__copy__8797af5827f444b5885a9a3ed955028d_master.jpg"
@@ -133,7 +135,6 @@
 
                 <div class="InfoProduct_right" style="padding-left: 40px;">
                     <h1>ÁO VEST BEIGE HỌA TIẾT HERRINGBONE - AV326</h1>
-                    <p>2,950,000đ</p>
                     <p>Loại: VEST ADAM MSP: AV32648</p>
                     <ul>
                         <li><b>SUIT NAM</b></li>
@@ -165,13 +166,20 @@
                             51
                         </label>
                     </div>
-                    <div class="mb-2">
-                        <span class="me-4">Số lượng: </span>
-                        <button class="decrease"
-                            style="font-size: 20px;padding: 3px 10px;border: none;cursor: pointer;">-</button>
-                        <input style="width: 50px;text-align: center;" type="text" class="quantity" value="1">
-                        <button class="increase"
-                            style="font-size: 16px;padding: 5px 10px;background-color: #ccc;border: none;cursor: pointer;">+</button>
+                    <div class="d-flex">
+                        <div class="mb-2">
+                            <span class="me-4">Số lượng: </span>
+                            <button class="decrease"
+                                style="font-size: 20px;padding: 3px 10px;border: none;cursor: pointer;">-</button>
+                            <input style="width: 50px;text-align: center;" type="text" class="quantity" value="1">
+                            <button class="increase"
+                                style="font-size: 16px;padding: 5px 10px;background-color: #ccc;border: none;cursor: pointer;">+</button>
+                        </div>
+
+                        <div class="ps-3">
+                            <button class="btn btn-danger">Mua ngay</button>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -291,7 +299,35 @@
         </div>
     </div> -->
 
-
+    <div>
+        <div id="dangnhap" class="addClass2" style="margin-top: -1280px; width: 500px;">
+            <div class="close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <form action="#" class="form">
+                <h2>Thông tin mua hàng</h2>
+                <div class="mb-3 mt-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control my-2" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control my-2" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        <a href="" class="ms-3" style="color: rgb(222, 152, 222);">Forgot Password</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary ">Login</button>
+                <div class="pt-2">
+                    <span> Don't have a account?</span>
+                    <a href="" class="ms-2">Register Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- <script src="jquery-3.6.1.min.js"></script> -->
     <script src="./info.js"></script>
