@@ -38,12 +38,48 @@
             </div>
 
             <div class="input">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Recipient's username"
-                        aria-describedby="button-addon2">
-                    <button class="btn  btn-outline-secondary"
+                <div class="input-group mb-3 relative myDIV">
+                    <input type="text" class="input-search form-control" placeholder="Tìm kiếm..."
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                    <button class="btn  log-button btn-outline-secondary"
                         style="color: white; width: 80px; background-color: rgb(197, 183, 79);" type="button"
                         id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
+                    <div class="hide rounded">
+                        <div class="p-2">
+                            <span style="font-size: 20px; font-weight: bold;">Bạn đang tìm kiếm sản phẩm: </span>
+                            <span style="font-size: 20px;" class="hide2"></span>
+                            <p style="font-size: 20px; font-weight: bold;">Gợi ý cho bạn: </p>
+                            <div class="d-flex">
+                                <div class="suggestion_image">
+                                    <a href="./aosomi/aosomi.html"> <img class="rounded"
+                                            style="width: 90px; height: 90px;"
+                                            src="https://product.hstatic.net/1000360022/product/dsc05344_ff7f90c7054f4c459778e57a7a244c80_1024x1024.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="suggestion_price ps-4">
+                                    <b style="font-size: 20px;">Áo Sơ Mi Ngắn Tay Nam Biluxury Black</b>
+                                    <p style="font-size: 20px;">Giá: 299,000vnđ</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="suggestion_image">
+                                    <a href="./quanau/quanau.html"><img class="rounded"
+                                            style="width: 90px; height: 100px;"
+                                            src="https://product.hstatic.net/200000053174/product/so_mi_cover_23_2_b982d9d9118a45538f77a30205956ef1_master.png"
+                                            alt=""></a>
+                                </div>
+                                <div class="suggestion_price ps-4">
+                                    <b style="font-size: 20px;">Quần Âu Chống Nhăn, Co Giãn, Bền Màu</b>
+                                    <p style="font-size: 20px;">Giá: 199,000vnđ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -331,6 +367,75 @@
 
     <!-- <script src="jquery-3.6.1.min.js"></script> -->
     <script src="./info.js"></script>
+    <script>
+        var inputField = document.querySelector(".input-search");
+        var logButton = document.querySelector(".log-button");
+        var hide = document.querySelector(".hide");
+        console.log(inputField);
+        console.log(logButton);
+
+
+        inputField.addEventListener('focus', () => {
+            hide.style.display = "block"
+        });
+
+        inputField.addEventListener('blur', () => {
+            hide.style.display = "none"
+        });
+
+        inputField.addEventListener("input", () => {
+            document.querySelector(".hide2").textContent = inputField.value;
+        });
+
+        logButton.addEventListener("click", () => {
+            const inputValue = inputField.value;
+            console.log(inputValue);
+
+            // if (inputValue == x) {
+            //     window.location.href = "./aosomi/aosomi.html";
+            // }
+
+            switch (String(inputValue)) {
+                case "ao so mi":
+                case "áo":
+                case "áo sơ mi":
+                case "Áo sơ mi":
+
+                    window.location.href = "aosomi.html";
+                    break;
+                case "quan au":
+                case "quần âu":
+                case "Quần âu":
+                case "quần":
+                    window.location.href = "../quanau/quanau.html";
+                    break;
+                case "giầy":
+                case "giay da":
+                case "giày da":
+                case "Giày da":
+                    window.location.href = "../giayda/giayda.html";
+                    break;
+
+                case "that lung":
+                case "thắt lưng":
+                case "Thắt lưng":
+                    window.location.href = "../thatlung/thatlung.html";
+                    break;
+
+                case "Suit":
+                case "suit":
+                    window.location.href = "../suit/suit.html";
+                    break;
+                default:
+                    alert("không có sản phẩm cần tìm")
+                    break;
+            }
+        });
+
+
+
+
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
         integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
