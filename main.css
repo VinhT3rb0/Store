@@ -528,3 +528,19 @@ body {
 #dropdownMenuButton2::after{
     display: none;
 }
+
+.hide{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 2px;
+    bottom: 0;
+    margin-top: 45px;
+    padding-top: 5px;
+    height: max-content;
+    z-index: 999;
+    width: 391px;
+    background-color: rgb(211, 203, 203);
+    
+}

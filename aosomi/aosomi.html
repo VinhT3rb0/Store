@@ -33,37 +33,76 @@
             <div class="logo">
                 <a href="/Store/index.html">
                     <img src="/store/assets/images/336051776_195820769748830_9036133639364375530_n.png" alt=""
-                style="width: 200px;height: 60px;">
+                        style="width: 200px;height: 60px;">
                 </a>
             </div>
 
             <div class="input">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Recipient's username"
-                        aria-describedby="button-addon2">
-                    <button class="btn  btn-outline-secondary"
+                <div class="input-group mb-3 relative myDIV">
+                    <input type="text" class="input-search form-control" placeholder="Tìm kiếm..."
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                    <button class="btn  log-button btn-outline-secondary"
                         style="color: white; width: 80px; background-color: rgb(197, 183, 79);" type="button"
                         id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
+                    <div class="hide rounded">
+                        <div class="p-2">
+                            <span style="font-size: 20px; font-weight: bold;">Bạn đang tìm kiếm sản phẩm: </span>
+                            <span style="font-size: 20px;" class="hide2"></span>
+                            <p style="font-size: 20px; font-weight: bold;">Gợi ý cho bạn: </p>
+                            <div class="d-flex">
+                                <div class="suggestion_image">
+                                    <a href="./aosomi/aosomi.html"> <img class="rounded"
+                                            style="width: 90px; height: 90px;"
+                                            src="https://product.hstatic.net/1000360022/product/dsc05344_ff7f90c7054f4c459778e57a7a244c80_1024x1024.jpg"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <div class="suggestion_price ps-4">
+                                    <b style="font-size: 20px;">Áo Sơ Mi Ngắn Tay Nam Biluxury Black</b>
+                                    <p style="font-size: 20px;">Giá: 299,000vnđ</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="suggestion_image">
+                                    <a href="./quanau/quanau.html"><img class="rounded"
+                                            style="width: 90px; height: 100px;"
+                                            src="https://product.hstatic.net/200000053174/product/so_mi_cover_23_2_b982d9d9118a45538f77a30205956ef1_master.png"
+                                            alt=""></a>
+                                </div>
+                                <div class="suggestion_price ps-4">
+                                    <b style="font-size: 20px;">Quần Âu Chống Nhăn, Co Giãn, Bền Màu</b>
+                                    <p style="font-size: 20px;">Giá: 199,000vnđ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+
             <div class="login">
                 <div class="d-flex align-items-center">
-                    <button  type="button" class="btn btn-dark out">Đăng nhập</button>
+                    <button type="button" class="btn btn-dark out">Đăng nhập</button>
                     <div>
-                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;"></p>
+                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;">
+                        </p>
                     </div>
                     <!-- <p class="changeText"></p> -->
                     <div>
                         <!-- <i class="fa-solid fa-cart-plus"></i> -->
                         <div class="dropdown">
-                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle" type="button"
+                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i style="font-size: 24px;" class="fa-light fa-solid fa-circle-user  px-2"></i>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                              <li onclick="clearLocalStorageAndReload()" class=" text-center">Đăng xuất</li>
+                                <li onclick="clearLocalStorageAndReload()" class=" text-center">Đăng xuất</li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
 
                 </div>
@@ -82,10 +121,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " id="Introduce" aria-current="page" href="../index.html">Giới thiệu</a>
+                                <a class="nav-link " id="Introduce" aria-current="page" href="../index.html">Giới
+                                    thiệu</a>
                             </li>
 
-                            
+
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sản phẩm</a>
@@ -96,7 +136,7 @@
                                     <a href="../thatlung/thatlung.html">Thắt Lưng</a>
                                     <a href="./aosomi.html">Áo sơ mi</a>
                                 </div>
-                            </li>   
+                            </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Blogs</a>
@@ -206,7 +246,7 @@
             </div>
         </div>
 
-        
+
 
         <div class="information_footer">
 
@@ -220,7 +260,7 @@
             </div>
 
 
-        
+
 
             <div class="service_footer">
                 <h3 class="title_footer">Dịch Vụ</h3>
@@ -268,7 +308,7 @@
             </div>
         </div>
     </div>
-    
+
     <div>
         <div id="dangnhap" class="addClass2">
             <div class="close-icon">
@@ -305,7 +345,75 @@
     <script src="../main.js"></script>
     <script src="../LocalStorage.js"></script>
     <script src="../GetAcc/GetAcc.js"></script>
+    <script>
+        var inputField = document.querySelector(".input-search");
+        var logButton = document.querySelector(".log-button");
+        var hide = document.querySelector(".hide");
+        console.log(inputField);
+        console.log(logButton);
 
+
+        inputField.addEventListener('focus', () => {
+            hide.style.display = "block"
+        });
+
+        inputField.addEventListener('blur', () => {
+            hide.style.display = "none"
+        });
+
+        inputField.addEventListener("input", () => {
+            document.querySelector(".hide2").textContent = inputField.value;
+        });
+
+        logButton.addEventListener("click", () => {
+            const inputValue = inputField.value;
+            console.log(inputValue);
+
+            // if (inputValue == x) {
+            //     window.location.href = "./aosomi/aosomi.html";
+            // }
+
+            switch (String(inputValue)) {
+                case "ao so mi":
+                case "áo":
+                case "áo sơ mi":
+                case "Áo sơ mi":
+
+                    window.location.href = "aosomi.html";
+                    break;
+                case "quan au":
+                case "quần âu":
+                case "Quần âu":
+                case "quần":
+                    window.location.href = "../quanau/quanau.html";
+                    break;
+                case "giầy":
+                case "giay da":
+                case "giày da":
+                case "Giày da":
+                    window.location.href = "../giayda/giayda.html";
+                    break;
+
+                case "that lung":
+                case "thắt lưng":
+                case "Thắt lưng":
+                    window.location.href = "../thatlung/thatlung.html";
+                    break;
+
+                case "Suit":
+                case "suit":
+                    window.location.href = "../suit/suit.html";
+                    break;
+                default:
+                    alert("không có sản phẩm cần tìm")
+                    break;
+            }
+        });
+
+
+
+
+    </script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
