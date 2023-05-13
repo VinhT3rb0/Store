@@ -1,26 +1,26 @@
 var ulList = document.querySelector("#Home");
 var ulList2 = document.querySelector("#Introduce");
-var ulList3 = document.querySelector("#Comment")
+// var ulList3 = document.querySelector("#Comment")
 
 var home = document.querySelector(".home")
 var introduce = document.querySelector(".introduce")
-var comment = document.querySelector(".comment")
+// var comment = document.querySelector(".comment")
 
 ulList.addEventListener("click", function() {
     ulList2.style.color = "white";
-    ulList3.style.color = "white";
+    // ulList3.style.color = "white";
 
     introduce.style.display = "none";
     // brand.style.display = "none";
     home.style.display = "block";
 });
 
-
+// console.log(ulList3);
 
 ulList2.addEventListener("click", function() {
     this.style.color = "rgb(197, 183, 79)";
     ulList.style.color = "white";
-    ulList3.style.color = "white";
+    // ulList3.style.color = "white";
     
 
     introduce.style.display = "block";
@@ -28,15 +28,15 @@ ulList2.addEventListener("click", function() {
     home.style.display = "none";
 });
 
-ulList3.addEventListener("click", function() {
-    this.style.color = "rgb(197, 183, 79)";
-    ulList.style.color = "white";
-    ulList2.style.color = "white";
+// ulList3.addEventListener("click", function() {
+//     this.style.color = "rgb(197, 183, 79)";
+//     ulList.style.color = "white";
+//     ulList2.style.color = "white";
 
-    introduce.style.display = "none";
-    home.style.display = "none";
-    comment.style.display = "flex";
-});
+//     introduce.style.display = "none";
+//     home.style.display = "none";
+//     comment.style.display = "flex";
+// });
 
 
 // ulList3.addEventListener("click", function() {
@@ -66,6 +66,7 @@ ulList3.addEventListener("click", function() {
 
 var login = document.querySelector('.login button[type = button]');
 
+console.log(login);
 
 login.addEventListener('click', function(){
     document.querySelector('#dangnhap').style.display = 'flex'

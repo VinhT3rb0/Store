@@ -1,6 +1,6 @@
 
 function clearLocalStorageAndReload() {
-    localStorage.removeItem('userData');
+    localStorage.clear();
     location.reload();
 }
 
