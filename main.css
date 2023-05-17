@@ -6,6 +6,7 @@
 body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
+    
 }
 
 .logo {
@@ -543,4 +544,19 @@ body {
     width: 391px;
     background-color: rgb(211, 203, 203);
     
+}
+
+.clearCmt{
+    position: relative;
+}
+
+.editButton{
+    height: 28px; 
+    border: none;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
 }
