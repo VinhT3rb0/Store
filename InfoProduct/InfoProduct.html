@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <div id="wrapper" style="height: 4000px">
+    <div id="wrapper">
         <div id="header">
             <div class="logo">
                 <a href="/Store/index.html">
@@ -88,7 +88,7 @@
 
             <div class="login">
                 <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-dark out">Đăng nhập</button>
+                    <button type="button" class="btn btn-dark out checkLog">Đăng nhập</button>
                     <div>
                         <p class="ListName mx-3" style="
                   margin-top: 20px;
@@ -421,21 +421,25 @@
                     </div>
                 </div>
 
+                <div class="LockCmt mt-4">
+                    <p class="fs-2">Vui lòng đăng nhập để gửi bình luận....</p>
+                </div>
+
                 <div class="uploadComment">
-                    <div>
-                        <div id="container"></div>
-                        <form action="">
-                            <p class="pt-2" style="font-size: 18px; font-weight: bold;"><label for="uploadCommentyour">Bình luận tại đây: </label></p>
-                            <textarea id="uploadCommentyour" class="p-1" placeholder="Nhập bình luận của bạn..." name="uploadCommentyour" rows="4" cols="80"></textarea>
-                            <br>
-                        </form>
-                        <button class="btn-primary btn" id="create-element-button">Gửi</button>
-                    </div>
+                    <div id="container"></div>
+                    <form action="">
+                        <p class="pt-2" style="font-size: 18px; font-weight: bold;"><label for="uploadCommentyour">Bình
+                                luận tại đây: </label></p>
+                        <textarea id="uploadCommentyour" class="p-1" placeholder="Nhập bình luận của bạn..."
+                            name="uploadCommentyour" rows="4" cols="80"></textarea>
+                        <br>
+                    </form>
+                    <button class="btn-primary btn" id="create-element-button">Gửi</button>
                 </div>
             </div>
         </div>
 
-        <!-- <div class="information_footer">
+        <div class="information_footer">
 
             <div class="about_us_footer">
                 <h3 class="title_footer">Về chúng tôi</h3>
@@ -489,15 +493,73 @@
                     Twitter
                 </a>
             </div>
-        </div> -->
+        </div>
+    </div>
     </div>
 
+    <!-- <div class="information_footer">
+
+            <div class="about_us_footer">
+                <h3 class="title_footer">Về chúng tôi</h3>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Thông tin thêm</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Cộng đồng</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Tin tức</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Cửa Hàng</a>
+
+            </div>
+            <div class="service_footer">
+                <h3 class="title_footer">Dịch Vụ</h3>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Tải xuống</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Giới thiệu</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Giao dịch</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Dịch Vụ</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Ứng dụng</a>
+            </div>
+
+
+            <div class="support_footer">
+                <h3 class="title_footer">Hỗ trợ</h3>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Phản hồi</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Hướng dẫn chọn size </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Hướng dẫn thanh toán</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Quy định đổi hàng</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">Hướng dẫn mua hàng</a>
+            </div>
+
+
+
+            <div class="community_footer">
+                <h3 class="title_footer">Community</h3>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class=" fab fa-facebook-messenger"></i>
+                    Messenger
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-tiktok"></i>
+                    Tiktok
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+            </div>
+        </div>
+    </div> -->
+
     <div>
-        <div id="dangnhap" class="addClass2">
+        <div id="dangnhap" class="addClass2" style="margin-top: -2200px;">
             <div class="close-icon">
                 <i class="fa-solid fa-xmark"></i>
             </div>
-            <form action="#" class="form ">
+            <form class="form ">
                 <h2>Đăng Nhập</h2>
                 <div class="mb-3 mt-3">
                     <label for="email">Email:</label>
@@ -523,7 +585,7 @@
     </div>
 
     <div>
-        <div id="resgi" class="addClass2 " style="width: 600px; margin-left: 30%;">
+        <div id="resgi" class="addClass2 " style="width: 600px; margin-left: 30%; margin-top: -2198px;">
             <div class="close-icon">
                 <i class="fa-solid fa-xmark"></i>
             </div>
@@ -561,8 +623,9 @@
 
 
     <!-- <script src="jquery-3.6.1.min.js"></script> -->
-    <script src="./info.js"></script>
+    <script src="../main.js"></script>
     <script src="../LocalStorage.js"></script>
+    <script src="./info.js"></script>
     <script>
         var inputField = document.querySelector(".input-search");
         var logButton = document.querySelector(".log-button");
@@ -627,7 +690,84 @@
         });
     </script>
 
+    <script>
+        if (localStorage.getItem("users") !== null) {
+            console.log("Local Storage có dữ liệu.");
+            document.querySelector('.uploadComment').style.display = 'block'
+            document.querySelector('.LockCmt').style.display = 'none';
 
+        } else {
+            console.log("Local Storage không có dữ liệu.");
+            document.querySelector('.uploadComment').style.display = 'none'
+            document.querySelector('.LockCmt').style.display = 'block';
+        }
+    </script>
+
+    <script>
+        var inputField = document.querySelector(".input-search");
+        var logButton = document.querySelector(".log-button");
+        var hide = document.querySelector(".hide");
+        console.log(inputField);
+        console.log(logButton);
+
+
+        inputField.addEventListener('focus', () => {
+            hide.style.display = "block"
+        });
+
+        inputField.addEventListener('blur', () => {
+            hide.style.display = "none"
+        });
+
+        inputField.addEventListener("input", () => {
+            document.querySelector(".hide2").textContent = inputField.value;
+        });
+
+        logButton.addEventListener("click", () => {
+            const inputValue = inputField.value;
+            console.log(inputValue);
+
+            // if (inputValue == x) {
+            //     window.location.href = "./aosomi/aosomi.html";
+            // }
+
+            switch (String(inputValue)) {
+                case "ao so mi":
+                case "áo":
+                case "áo sơ mi":
+                case "Áo sơ mi":
+
+                    window.location.href = "../aosomi/aosomi.html";
+                    break;
+                case "quan au":
+                case "quần âu":
+                case "Quần âu":
+                case "quần":
+                    window.location.href = "../quanau/quanau.html";
+                    break;
+                case "giầy":
+                case "giay da":
+                case "giày da":
+                case "Giày da":
+                    window.location.href = "../giayda/giayda.html";
+                    break;
+
+                case "that lung":
+                case "thắt lưng":
+                case "Thắt lưng":
+                    window.location.href = "../thatlung/thatlung.html";
+                    break;
+
+                case "Suit":
+                case "suit":
+                    window.location.href = "../suit/suit.html";
+                    break;
+                default:
+                    alert("không có sản phẩm cần tìm")
+                    break;
+            }
+        });
+    </script>
 
     <script>
         var textarea = document.querySelector('#uploadCommentyour')
@@ -647,7 +787,7 @@
             divElement.innerHTML = `
                 <i style="margin-top: 20px;" class="pt-4 fa-solid fa-circle-user fa-2xl"></i>
                 <div class="ms-2 py-4">
-                <p class="m-0 CmtUser">LeThiemAnh2</p>
+                <p class="m-0 CmtUser">Bình luận của tôi</p>
                 <i class="fa-sharp fa-solid fa-star" style="color: #f32020"></i>
                 <i class="fa-sharp fa-solid fa-star" style="color: #f32020"></i>
                 <i class="fa-sharp fa-solid fa-star" style="color: #f32020"></i>
@@ -665,8 +805,13 @@
             container.appendChild(divElement);
             var commentList = document.querySelector('.commentList');
             console.log(commentList);
-            
-            commentList.innerText = textarea.value;
+
+            var text = textarea.value;
+            var removedEnterText = text.replace(/\n{2,}/g, '\n');
+
+            commentList.innerText = removedEnterText;
+
+
             textarea.value = '';
 
 
@@ -675,8 +820,8 @@
             const Acc2 = JSON.parse(localStorage.getItem('users')) || [];
             Acc2.forEach((user) => {
                 const AccName2 = `
-            <span>${user.email}</span>
-        `;
+                <span>${user.email}</span>
+                `;
                 ListName.innerHTML = AccName2;
             });
 

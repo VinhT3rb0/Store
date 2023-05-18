@@ -4,6 +4,8 @@ function clearLocalStorageAndReload() {
     location.reload();
 }
 
+    
+
 function saveUserDataToLocalStorage(userData) {
     console.log(userData);
 
@@ -19,6 +21,7 @@ nextPage.addEventListener('click', ()=>{
     document.querySelector('#dangnhap').style.display = 'none';
     document.querySelector('#resgi').style.display = 'block';
 })
+
 
 
 function Success() {

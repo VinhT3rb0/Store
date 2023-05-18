@@ -70,7 +70,9 @@ console.log(login);
 
 login.addEventListener('click', function(){
     document.querySelector('#dangnhap').style.display = 'flex'
+
 })
+
 
 var closeLogin = document.querySelector('#dangnhap .close-icon')
     closeLogin.addEventListener('click', function () {

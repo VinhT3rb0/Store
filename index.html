@@ -87,14 +87,25 @@
 
             <div class="login">
                 <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-dark out">Đăng nhập</button>
+                    <button type="button" class="btn btn-dark out checkLog">Đăng nhập</button>
                     <div>
                         <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;">
                         </p>
                     </div>
-                    <!-- <p class="changeText"></p> -->
                     <div>
-                        <!-- <i class="fa-solid fa-cart-plus"></i> -->
+                        <!-- <div class="d-flex">
+                            <h2>hiển thị</h2>
+                            <p>Số lượng: <span id="quantity">0</span></p>
+                            <p>Giá: $<span id="price"></span></p>
+                            <button id="resetButton">Xóa</button>
+                    
+                            <div class="my-3">
+                                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                            </div>
+                        </div> -->
+
+
+
                         <div class="dropdown">
                             <button style="height: 36px;" class="btn btn-secondary dropdown-toggle disload"
                                 type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -106,6 +117,35 @@
                         </div>
                     </div>
 
+                    <div class="ps-4">
+                        <div aria-expanded="false" style="position: relative;">
+                            <button type="button" class="btn btn-secondary toggleButton2" style="position: relative;"><i
+                                    class="fa-solid fa-cart-shopping"></i>
+                                <p
+                                    style="position: absolute; top: -10px;
+                                    right: -14px; border: 1px solid red;
+                                    width: 26px; height: 26px; padding: 2px; border-radius: 999px; background-color: aliceblue; color: black;">
+                                    <span id="quantity">0</span></p>
+                            </button>
+                            <div id="redBox" class="mt-3 rounded" style="z-index: 999; display: none; height: max-content; font-size: 19px;">
+                                <div class="p-3" style="text-transform: none; color: #333;">
+                                    <div class="d-flex justify-content-between">
+                                        <p style="font-size: 20px;">Đơn hàng của bạn: </p>
+                                        <button id="resetButton" style="height: max-content;
+                                        padding: 2px 10px;
+                                        background-color: rgb(250, 112, 112);
+                                        color: black;">Clear</button>
+                                    </div>
+                                    <p>Tên sản phẩm: <p id="TakeName"></p></p>
+                                    <p>Số lượng: <span id="quantity2">0</span></p>
+                                    <p>Tổng hóa đơn: <span id="price"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
 
@@ -114,7 +154,7 @@
         </div>
 
         <div class="header_two">
-            <nav class="navbar navbar-expand-lg navbar-light " id="color">
+            <nav class="navbar navbar-expand-lg navbar-light " id="color" style="position: relative;">
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
@@ -146,8 +186,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/Store/Contact/Contact.html">Liên hệ</a>
                             </li>
+
                         </ul>
+
+
                     </div>
+                </div>
+
+                <div class="alert alert-success" id="success-alert"
+                    style="position: absolute; right: 0; top: 0; margin-top: 60px;">
+                    <strong>Thành công! </strong> Sản phẩm đã được thêm vào giỏ hàng
                 </div>
             </nav>
         </div>
@@ -288,8 +336,11 @@
                                 <div class="card-body setupContent">
                                     <h5 class="card-title text-center">ÁO VEST HỌA TIẾT STRIPE - AV334</h5>
                                     <p class="text-center">2,950,000₫</p>
-                                    <a href="#" class=" text-center d-block">Thêm vào giỏ</a>
+                                    <button class="btn btn-secondary BuyItem" data-text="ÁO VEST HỌA TIẾT STRIPE - AV334" id="myWish" data-price="2950000"
+                                        style="margin-left: 20px;">Thêm vào
+                                        giỏ</button>
                                 </div>
+
                             </div>
 
                             <div class="card setupCard" style="width: 12rem;">
@@ -298,7 +349,9 @@
                                 <div class="card-body setupContent">
                                     <h5 class="card-title text-center">GIÀY ĐEN TAG VÀNG - 7896-L301D</h5>
                                     <p class="text-center">1,750,000₫</p>
-                                    <a href="#" class=" text-center d-block">Thêm vào giỏ</a>
+                                    <button class="btn btn-secondary BuyItem" id="myWish" data-price="1750000"
+                                        data-text="GIÀY ĐEN TAG VÀNG - 7896-L301D" style="margin-left: 20px;">Thêm vào
+                                        giỏ</button>
                                 </div>
                             </div>
 
@@ -308,7 +361,9 @@
                                 <div class="card-body setupContent">
                                     <h5 class="card-title text-center">GIÀY ĐEN LÌ - M1L21AD</h5>
                                     <p class="text-center">1,700,000₫</p>
-                                    <a href="#" class=" text-center d-block">Thêm vào giỏ</a>
+                                    <button class="btn btn-secondary BuyItem " data-text="GIÀY ĐEN LÌ - M1L21AD" data-price="1700000"
+                                        style="margin-left: 20px;">Thêm vào
+                                        giỏ</button>
                                 </div>
                             </div>
 
@@ -318,7 +373,9 @@
                                 <div class="card-body setupContent">
                                     <h5 class="card-title text-center">SƠ MI ĐEN KARO - SMC106</h5>
                                     <p class="text-center">750,000₫</p>
-                                    <a href="#" class=" text-center d-block">Thêm vào giỏ</a>
+                                    <button class="btn btn-secondary BuyItem " data-text="SƠ MI ĐEN KARO - SMC106" data-price="750000"
+                                        style="margin-left: 20px;">Thêm vào
+                                        giỏ</button>
                                 </div>
                             </div>
 
@@ -328,7 +385,9 @@
                                 <div class="card-body setupContent">
                                     <h5 class="card-title text-center">THẮT LƯNG DA ĐEN TRƠN - TL12</h5>
                                     <p class="text-center">550,000₫</p>
-                                    <a href="#" class=" text-center d-block">Thêm vào giỏ</a>
+                                    <button class="btn btn-secondary BuyItem " data-text="THẮT LƯNG DA ĐEN TRƠN - TL12" data-price="550000"
+                                        style="margin-left: 20px;">Thêm vào
+                                        giỏ</button>
                                 </div>
                             </div>
 
@@ -338,7 +397,9 @@
                                 <div class="card-body setupContent">
                                     <h5 class="card-title text-center">QUẦN ÂU ĐEN SỌC CHÌM - Q332</h5>
                                     <p class="text-center">850,000₫</p>
-                                    <a href="#" class=" text-center d-block">Thêm vào giỏ</a>
+                                    <button class="btn btn-secondary BuyItem " data-text="QUẦN ÂU ĐEN SỌC CHÌM - Q332" data-price="850000"
+                                        style="margin-left: 20px;">Thêm vào
+                                        giỏ</button>
                                 </div>
                             </div>
                         </div>
@@ -440,21 +501,6 @@
                     </div>
 
                 </div>
-            </div>
-
-
-            <!-- Part 5 -->
-            <!-- <div class="comment" style="display: none;">
-                <form id="comment-form">
-                    <input type="text" id="comment-input" placeholder="Add a comment...">
-                    <button id="buttonCmt" type="submit2">Post</button>
-                </form>
-                <ol id="comment-list">
-                </ol>
-            </div> -->
-            <!-- Part 6 -->
-            <div class="Hotline">
-
             </div>
         </div>
 
@@ -585,6 +631,78 @@
     <script src="./main.js"></script>
     <script src="./LocalStorage.js"></script>
     <script src="./search.js"></script>
+
+    <script>
+        var quantity = 0;
+        var quantity2 = 0;
+        var price = 0;
+        var emptyName = ' ';
+        var lineCounter = 1;
+
+        var quantityElement = document.getElementById('quantity');
+        var quantityElement2 = document.getElementById('quantity2');
+        var priceElement = document.getElementById('price');
+        var TakeName = document.querySelector('#TakeName');
+        const buyBtns = document.querySelectorAll('.BuyItem');
+        console.log(buyBtns);
+
+        for (var i = 0; i < buyBtns.length; i++) {
+            buyBtns[i].addEventListener('click', function (e) {
+                $("#success-alert").fadeTo(2000, 500).slideUp(500, function () {
+                    $("#success-alert").slideUp(500);
+                });
+
+                var productPrice = parseInt(this.getAttribute('data-price'));
+                var dataText = this.getAttribute('data-text');
+                console.log(dataText);
+
+                quantity++;
+                quantity2++;
+                price += productPrice;
+                var formattedPrice = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+
+                var linePrefix = lineCounter + '. ';
+                lineCounter++;
+                TakeName.textContent += " \t" + linePrefix  + dataText;
+                quantityElement.textContent = quantity;
+                quantityElement2.textContent = quantity2;
+                priceElement.textContent = formattedPrice;
+            });
+        }
+
+
+
+        resetButton.addEventListener('click', function () {
+            quantity = 0;
+            quantity2 = 0;
+            price = 0;
+            emptyName = ' ';
+            lineCounter = 1;
+
+            quantityElement.textContent = quantity;
+            quantityElement2.textContent = quantity2;
+            priceElement.textContent = price;
+            TakeName.innerText  = emptyName;
+        });
+
+    </script>
+
+
+
+    <script>
+        var toggleButton2 = document.querySelector(".toggleButton2");
+        var redBox = document.getElementById("redBox");
+
+        toggleButton2.addEventListener("click", function () {
+            if (redBox.style.display == 'none') {
+                redBox.style.display = 'block'
+            }
+            else {
+                redBox.style.display = 'none'
+            }
+        });
+
+    </script>
     <!-- <script src="./cmt.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
@@ -617,6 +735,17 @@
                     }
                 }
             ]
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#success-alert").hide();
+            // $("#myWish").click(function showAlert() {
+            //     $("#success-alert").fadeTo(2000, 500).slideUp(500, function () {
+            //         $("#success-alert").slideUp(500);
+            //     });
+            // });
         });
     </script>
 </body>
