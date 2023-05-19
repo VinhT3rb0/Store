@@ -23,8 +23,9 @@
         rel="stylesheet">
     <link rel="stylesheet" rel="preconnect"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <link rel="icon" type="image/x-icon" href="https://themen.com.vn/favicon.ico">
     <link rel="stylesheet" href="../main.css">
-    <title>Document</title>
+    <title>Liên hệ</title>
     <style>
         .bodyContact>p {
             font-size: 30px;
@@ -150,28 +151,28 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" id="Home" aria-current="page" href="#">Trang chủ</a>
+                                <a class="nav-link" id="Home" aria-current="page" href="../index.html">Trang chủ</a>
 
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " id="Introduce" aria-current="page" href="#">Giới thiệu</a>
+                                <a class="nav-link " id="Introduce" aria-current="page" href="../index.html">Giới thiệu</a>
                             </li>
 
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sản phẩm</a>
                                 <div class="dropdown-content ">
-                                    <a href="../Store/suit/suit.html">Suit 2023</a>
-                                    <a href="../Store/quanau/quanau.html">Quần Âu</a>
-                                    <a href="../Store/giayda/giayda.html">Giày Da</a>
-                                    <a href="../Store/thatlung/thatlung.html">Thắt Lưng</a>
-                                    <a href="../Store/aosomi/aosomi.html">Áo sơ mi</a>
+                                    <a href="../suit/suit.html">Suit 2023</a>
+                                    <a href="../quanau/quanau.html">Quần Âu</a>
+                                    <a href="../giayda/giayda.html">Giày Da</a>
+                                    <a href="../thatlung/thatlung.html">Thắt Lưng</a>
+                                    <a href="../aosomi/aosomi.html">Áo sơ mi</a>
                                 </div>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/Store/Contact/Contact.html">Liên hệ</a>
+                                <a class="nav-link" href="../Contact/Contact.html">Liên hệ</a>
                             </li>
 
                         </ul>
@@ -195,7 +196,11 @@
             <p>Địa chỉ: Ngõ 188 - Tổ 7 - Yên Nghĩa - Hà Đông - Hà Nội</p>
             <p>Email: shopmen88@gmail.com <a href="mailto:shopmen88@gmail.com">Phản hồi ngay</a></p>
             <div class="text-center">
-                <i class="fa-brands fa-facebook" style="font-size: 100px; cursor: pointer;"></i>
+                <a href="https://www.facebook.com/thinhkhanh2001" class="closerEvent" target="_blank">
+
+                    <i class="fa-brands fa-facebook" style="font-size: 100px; cursor: pointer;"></i>
+                </a>
+                
                 <i class="fa-brands fa-telegram mx-4 mt-4" style="font-size: 100px; cursor: pointer;"></i>
                 <i class="fa-brands fa-twitter" style="font-size: 100px; cursor: pointer;"></i>
             </div>
@@ -335,6 +340,8 @@
     <script src="../main.js"></script>
     <script src="../LocalStorage.js"></script>
     <script src="../GetAcc/GetAcc.js"></script>
+
+    
     <script>
         var inputField = document.querySelector(".input-search");
         var logButton = document.querySelector(".log-button");
@@ -404,7 +411,77 @@
 
 
     </script>
+    <script>
+        var quantity = 0;
+        var quantity2 = 0;
+        var price = 0;
+        var emptyName = ' ';
+        var lineCounter = 1;
 
+        var quantityElement = document.getElementById('quantity');
+        var quantityElement2 = document.getElementById('quantity2');
+        var priceElement = document.getElementById('price');
+        var TakeName = document.querySelector('#TakeName');
+        const buyBtns = document.querySelectorAll('.BuyItem');
+        console.log(buyBtns);
+
+        for (var i = 0; i < buyBtns.length; i++) {
+            buyBtns[i].addEventListener('click', function (e) {
+                $("#success-alert").fadeTo(2000, 500).slideUp(500, function () {
+                    $("#success-alert").slideUp(500);
+                });
+
+                var productPrice = parseInt(this.getAttribute('data-price'));
+                var dataText = this.getAttribute('data-text');
+                console.log(dataText);
+
+                quantity++;
+                quantity2++;
+                price += productPrice;
+                var formattedPrice = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+
+                var linePrefix = lineCounter + '. ';
+                lineCounter++;
+                TakeName.textContent += linePrefix + dataText + " | ";
+                quantityElement.textContent = quantity;
+                quantityElement2.textContent = quantity2;
+                priceElement.textContent = formattedPrice;
+            });
+        }
+
+
+
+        resetButton.addEventListener('click', function () {
+            quantity = 0;
+            quantity2 = 0;
+            price = 0;
+            emptyName = ' ';
+            lineCounter = 1;
+
+            quantityElement.textContent = quantity;
+            quantityElement2.textContent = quantity2;
+            priceElement.textContent = price;
+            TakeName.innerText = emptyName;
+        });
+
+    </script>
+
+
+    <!-- ẩn hiện đặt hàng -->
+    <script>
+        var toggleButton2 = document.querySelector(".toggleButton2");
+        var redBox = document.getElementById("redBox");
+
+        toggleButton2.addEventListener("click", function () {
+            if (redBox.style.display == 'none') {
+                redBox.style.display = 'block'
+            }
+            else {
+                redBox.style.display = 'none'
+            }
+        });
+
+    </script>
 </body>
 
 </html>

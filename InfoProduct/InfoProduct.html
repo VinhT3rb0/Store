@@ -22,8 +22,9 @@
         rel="stylesheet" />
     <link rel="stylesheet" rel="preconnect"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <link rel="icon" type="image/x-icon" href="https://themen.com.vn/favicon.ico">
     <link rel="stylesheet" href="../main.css" />
-    <title>Document</title>
+    <title>Thông tin</title>
 </head>
 
 <body>
@@ -156,28 +157,28 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" id="Home" aria-current="page" href="#">Trang chủ</a>
+                                <a class="nav-link" id="Home" aria-current="page" href="../index.html">Trang chủ</a>
 
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link " id="Introduce" aria-current="page" href="#">Giới thiệu</a>
+                                <a class="nav-link " id="Introduce" aria-current="page" href="../index.html">Giới thiệu</a>
                             </li>
 
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sản phẩm</a>
                                 <div class="dropdown-content ">
-                                    <a href="../aosomi/aosomi.html">Suit 2023</a>
-                                    <a href="../Store/quanau/quanau.html">Quần Âu</a>
-                                    <a href="../Store/giayda/giayda.html">Giày Da</a>
-                                    <a href="../Store/thatlung/thatlung.html">Thắt Lưng</a>
-                                    <a href="../Store/aosomi/aosomi.html">Áo sơ mi</a>
+                                    <a href="../suit/suit.html">Suit 2023</a>
+                                    <a href="../quanau/quanau.html">Quần Âu</a>
+                                    <a href="../giayda/giayda.html">Giày Da</a>
+                                    <a href="../thatlung/thatlung.html">Thắt Lưng</a>
+                                    <a href="../aosomi/aosomi.html">Áo sơ mi</a>
                                 </div>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/Store/Contact/Contact.html">Liên hệ</a>
+                                <a class="nav-link" href="../Contact/Contact.html">Liên hệ</a>
                             </li>
 
                         </ul>
@@ -681,71 +682,7 @@
         }
     </script>
 
-    <script>
-        var inputField = document.querySelector(".input-search");
-        var logButton = document.querySelector(".log-button");
-        var hide = document.querySelector(".hide");
-        console.log(inputField);
-        console.log(logButton);
-
-
-        inputField.addEventListener('focus', () => {
-            hide.style.display = "block"
-        });
-
-        inputField.addEventListener('blur', () => {
-            hide.style.display = "none"
-        });
-
-        inputField.addEventListener("input", () => {
-            document.querySelector(".hide2").textContent = inputField.value;
-        });
-
-        logButton.addEventListener("click", () => {
-            const inputValue = inputField.value;
-            console.log(inputValue);
-
-            // if (inputValue == x) {
-            //     window.location.href = "./aosomi/aosomi.html";
-            // }
-
-            switch (String(inputValue)) {
-                case "ao so mi":
-                case "áo":
-                case "áo sơ mi":
-                case "Áo sơ mi":
-
-                    window.location.href = "../aosomi/aosomi.html";
-                    break;
-                case "quan au":
-                case "quần âu":
-                case "Quần âu":
-                case "quần":
-                    window.location.href = "../quanau/quanau.html";
-                    break;
-                case "giầy":
-                case "giay da":
-                case "giày da":
-                case "Giày da":
-                    window.location.href = "../giayda/giayda.html";
-                    break;
-
-                case "that lung":
-                case "thắt lưng":
-                case "Thắt lưng":
-                    window.location.href = "../thatlung/thatlung.html";
-                    break;
-
-                case "Suit":
-                case "suit":
-                    window.location.href = "../suit/suit.html";
-                    break;
-                default:
-                    alert("không có sản phẩm cần tìm")
-                    break;
-            }
-        });
-    </script>
+    
 
     <script>
         var textarea = document.querySelector('#uploadCommentyour')
@@ -889,7 +826,7 @@
 
                 var linePrefix = lineCounter + '. ';
                 lineCounter++;
-                TakeName.textContent += " \t" + linePrefix + dataText;
+                TakeName.textContent += linePrefix + dataText + " | ";
                 quantityElement.textContent = quantity;
                 quantityElement2.textContent = quantity2;
                 priceElement.textContent = formattedPrice;
