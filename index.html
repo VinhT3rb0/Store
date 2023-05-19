@@ -93,19 +93,6 @@
                         </p>
                     </div>
                     <div>
-                        <!-- <div class="d-flex">
-                            <h2>hiển thị</h2>
-                            <p>Số lượng: <span id="quantity">0</span></p>
-                            <p>Giá: $<span id="price"></span></p>
-                            <button id="resetButton">Xóa</button>
-                    
-                            <div class="my-3">
-                                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-                            </div>
-                        </div> -->
-
-
-
                         <div class="dropdown">
                             <button style="height: 36px;" class="btn btn-secondary dropdown-toggle disload"
                                 type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -131,14 +118,14 @@
                                 <div class="p-3" style="text-transform: none; color: #333;">
                                     <div class="d-flex justify-content-between">
                                         <p style="font-size: 20px;">Đơn hàng của bạn: </p>
-                                        <button id="resetButton" style="height: max-content;
+                                        <button id="resetButton" class="rounded" style="height: max-content;
                                         padding: 2px 10px;
-                                        background-color: rgb(250, 112, 112);
+                                        background-color: gray;
                                         color: black;">Clear</button>
                                     </div>
                                     <p>Tên sản phẩm: <p id="TakeName"></p></p>
                                     <p>Số lượng: <span id="quantity2">0</span></p>
-                                    <p>Tổng hóa đơn: <span id="price"></span></p>
+                                    <p class="mb-0">Tổng hóa đơn: <span id="price"></span></p>
                                 </div>
                             </div>
                         </div>
@@ -180,10 +167,6 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" id="Comment" href="./Comment/cmt.html">Đánh giá</a>
-                            </li>
-
-                            <li class="nav-item">
                                 <a class="nav-link" href="/Store/Contact/Contact.html">Liên hệ</a>
                             </li>
 
@@ -194,7 +177,7 @@
                 </div>
 
                 <div class="alert alert-success" id="success-alert"
-                    style="position: absolute; right: 0; top: 0; margin-top: 60px;">
+                    style="display: none; position: absolute; right: 0; top: 0; margin-top: 60px;">
                     <strong>Thành công! </strong> Sản phẩm đã được thêm vào giỏ hàng
                 </div>
             </nav>
@@ -632,6 +615,7 @@
     <script src="./LocalStorage.js"></script>
     <script src="./search.js"></script>
 
+    <!-- đặt hàng -->
     <script>
         var quantity = 0;
         var quantity2 = 0;
@@ -688,7 +672,7 @@
     </script>
 
 
-
+    <!-- ẩn hiện đặt hàng -->
     <script>
         var toggleButton2 = document.querySelector(".toggleButton2");
         var redBox = document.getElementById("redBox");
@@ -703,7 +687,6 @@
         });
 
     </script>
-    <!-- <script src="./cmt.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
         integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
