@@ -577,3 +577,9 @@ body {
   position: absolute;
   right: 0;
 }
+
+.EditBuyItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

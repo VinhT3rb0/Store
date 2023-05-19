@@ -57,7 +57,9 @@ function renderUserList() {
     });
 }
 
-const userForm = document.querySelector('form');
+
+
+const userForm = document.querySelector('.form');
 userForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
